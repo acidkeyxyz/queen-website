@@ -1,7 +1,7 @@
 # CLAUDE.md — working context for the YuriApp marketing site
 
 Read before proposing structural changes. Architecture mirrors
-`../servi-rapidos-website` and `../jis-property-services-website` (Astro static,
+`../../servi-rapidos-website` and `../../jis-property-services-website` (Astro static,
 content as validated data, SEO first), adapted to a SaaS product and extended
 with scroll-driven animations.
 
