@@ -1,7 +1,7 @@
 # Material still needed
 
 ## Data to confirm
-- [ ] Production domain for the marketing site (today the placeholder `yuriapp.example`).
+- [ ] Confirm `www.queentires.com.mx` as the production domain for the marketing site (assumed in `business.json`).
 - [ ] Legal name and registered address for the footer and the privacy notice.
 - [ ] Public phone and WhatsApp number (or confirm there will be none).
 - [ ] Final price of the Taller plan (the site shows $190 MXN per user/month, as the app charges today).

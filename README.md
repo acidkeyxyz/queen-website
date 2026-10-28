@@ -12,7 +12,7 @@ pnpm preview
 See `CLAUDE.md` for architecture and rules, `USER-MANUAL.md` for day-to-day edits.
 
 ## Launch checklist
-- [ ] Set the production domain in `src/content/business.json` -> `url` (currently the placeholder `https://yuriapp.example`); canonical URLs, sitemap, hreflang and `robots.txt` all derive from it.
+- [x] Production domain is set to `https://www.queentires.com.mx` in `src/content/business.json` -> `url` (assumed; confirm before launch). Canonical URLs, sitemap, hreflang and `robots.txt` derive from it.
 - [ ] Fill `legalName`, `phone`, `whatsapp`, `address` (every `REPLACE_ME`). WhatsApp and phone buttons appear automatically once real.
 - [ ] Have a lawyer review `src/content/pages/es-mx/privacy.json` (it is a draft) and decide on a terms page.
 - [ ] Add GTM/GA4 IDs under `analytics` (nothing loads while they are empty) and list campaign landing URLs in `docs/URLS-GOOGLE-ADS-Y-GTM.txt`.
