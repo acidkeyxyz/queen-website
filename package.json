@@ -9,10 +9,14 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "brand:assets": "node scripts/generate-brand-assets.mjs"
+    "brand:assets": "node scripts/generate-brand-assets.mjs",
+    "video:encode": "node scripts/encode-video.mjs"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild", "sharp"]
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

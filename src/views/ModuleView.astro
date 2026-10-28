@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import Base from '@/layouts/Base.astro';
 import Icon from '@/components/Icon.astro';
 import SampleCard from '@/components/SampleCard.astro';
+import VideoDemo from '@/components/VideoDemo.astro';
 import Breadcrumbs from '@/components/layout/Breadcrumbs.astro';
 import { business } from '@/lib/business';
 import { buildGraph } from '@/lib/schema';
@@ -40,7 +41,7 @@ const graph = buildGraph({ path, title: m.seoTitle, description: m.seoDescriptio
           <a class="btn btn--outline" href={business.appSales}>{t.cta.sales}</a>
         </div>
       </div>
-      <SampleCard sample={m.sample} class="module-hero__sample" data-reveal="left" />
+      {m.video ? <VideoDemo video={m.video} label={m.cardTitle} /> : <SampleCard sample={m.sample} class="module-hero__sample" data-reveal="left" />}
     </div>
   </section>
   <section class="section section--paper">

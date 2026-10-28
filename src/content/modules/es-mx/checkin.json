@@ -70,5 +70,13 @@
       "q": "¿Se puede usar desde el celular?",
       "a": "Sí. {brand} es una aplicación web adaptable, instalable como PWA, y funciona dentro del taller."
     }
-  ]
+  ],
+  "video": {
+    "webm": "/media/mazda3-hatchback-3d.webm",
+    "mp4": "/media/mazda3-hatchback-3d.mp4",
+    "poster": "/media/mazda3-hatchback-3d-poster.jpg",
+    "width": 636,
+    "height": 342,
+    "description": "Video sin audio de 7 segundos. Un modelo 3D de un Mazda 3 Hatchback gris gira para mostrarse de atrás, de frente y de lado. Al pasar el cursor sobre las llantas y la salpicadera, esas piezas se resaltan en rosa, como en la recepción del vehículo."
+  }
 }

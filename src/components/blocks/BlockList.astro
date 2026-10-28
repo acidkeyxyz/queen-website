@@ -2,6 +2,7 @@
 import Hero from './Hero.astro';
 import Problem from './Problem.astro';
 import Journey from './Journey.astro';
+import Demo from './Demo.astro';
 import Modules from './Modules.astro';
 import Features from './Features.astro';
 import Stats from './Stats.astro';
@@ -20,7 +21,7 @@ interface Props {
 }
 const { blocks, pageTitle, firstIsH1 } = Astro.props;
 const map: Record<string, any> = {
-  hero: Hero, problem: Problem, journey: Journey, modules: Modules, features: Features, stats: Stats,
+  hero: Hero, problem: Problem, demo: Demo, journey: Journey, modules: Modules, features: Features, stats: Stats,
   pricing: Pricing, faq: Faq, cta: Cta, contact: Contact, prose: Prose,
 };
 ---

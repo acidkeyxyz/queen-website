@@ -1,7 +1,7 @@
 {
   "nav": { "modules": "Funciones", "pricing": "Precios", "contact": "Contacto", "login": "Iniciar sesión", "menu": "Menú" },
   "cta": { "signup": "Crear cuenta gratis", "sales": "Hablar con ventas", "whatsapp": "Escríbenos por WhatsApp", "seeModule": "Ver detalle", "allModules": "Ver todas las funciones" },
-  "a11y": { "skip": "Saltar al contenido", "newWindow": "(se abre en una ventana nueva)", "breadcrumb": "Ruta de navegación", "home": "Inicio", "tabs": "Etapas del taller", "sample": "Datos de ejemplo, ilustrativos", "scrollProgress": "Progreso de lectura" },
+  "a11y": { "skip": "Saltar al contenido", "newWindow": "(se abre en una ventana nueva)", "breadcrumb": "Ruta de navegación", "home": "Inicio", "tabs": "Etapas del taller", "sample": "Datos de ejemplo, ilustrativos", "play": "Reproducir video", "pause": "Pausar video", "videoNoSound": "Video sin audio", "scrollProgress": "Progreso de lectura" },
   "footer": { "product": "Producto", "company": "Empresa", "account": "Tu cuenta", "privacy": "Aviso de privacidad", "rights": "Todos los derechos reservados.", "built": "Hecho en México", "createdBy": "Creado por" },
   "module": { "highlights": "Qué incluye", "faq": "Preguntas frecuentes", "next": "Sigue en el recorrido", "stage": "Etapa" },
   "notFound": { "title": "No encontramos esa página", "text": "La dirección no existe o cambió. Vuelve al inicio o revisa las funciones." }

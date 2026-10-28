@@ -1,0 +1,31 @@
+---
+import Icon from '@/components/Icon.astro';
+import VideoDemo from '@/components/VideoDemo.astro';
+import { resolveHref } from '@/lib/links';
+import { fill } from '@/lib/text';
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'demo'>;
+  level?: 1 | 2;
+}
+const { block, level = 2 } = Astro.props;
+const Tag = level === 1 ? 'h1' : 'h2';
+---
+<section class="section demo-section">
+  <div class="container demo-section__grid">
+    <div class="demo-section__copy">
+      <Tag class="section__title" data-reveal>{fill(block.title)}</Tag>
+      <p class="section__lede" data-reveal style="--i:1">{fill(block.lede)}</p>
+      <ul class="demo-section__list">
+        {block.bullets.map((b, i) => (
+          <li data-reveal="left" style={`--i:${i + 2}`}><Icon name="check" size={20} /><span>{fill(b)}</span></li>
+        ))}
+      </ul>
+      <p data-reveal style="--i:5">
+        <a class="btn btn--primary" href={resolveHref(block.cta.href)}>{block.cta.label}</a>
+      </p>
+    </div>
+    <VideoDemo video={block.video} label={fill(block.title)} />
+  </div>
+</section>

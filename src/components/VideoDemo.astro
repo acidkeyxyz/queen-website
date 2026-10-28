@@ -1,0 +1,90 @@
+---
+import Icon from '@/components/Icon.astro';
+import { t } from '@/i18n';
+import { fill } from '@/lib/text';
+
+interface Props {
+  video: { webm: string; mp4: string; poster: string; width: number; height: number; description: string };
+  label: string;
+}
+const { video, label } = Astro.props;
+const id = `demo-${Math.abs([...video.mp4].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7))}`;
+---
+<figure class="demo" data-demo data-reveal="scale">
+  <div class="demo__frame">
+    <video
+      class="demo__video"
+      muted
+      loop
+      playsinline
+      controls
+      preload="none"
+      poster={video.poster}
+      width={video.width}
+      height={video.height}
+      aria-label={label}
+      aria-describedby={id}
+    >
+      <source src={video.webm} type="video/webm" />
+      <source src={video.mp4} type="video/mp4" />
+    </video>
+    <button class="demo__toggle" type="button" hidden data-play={t.a11y.play} data-pause={t.a11y.pause}>
+      <Icon name="pause" size={18} class="demo__icon demo__icon--pause" />
+      <Icon name="play" size={18} class="demo__icon demo__icon--play" />
+      <span class="demo__toggle-label">{t.a11y.pause}</span>
+    </button>
+  </div>
+  <figcaption class="demo__caption" id={id}>
+    <span class="sr-only">{t.a11y.videoNoSound}. </span>{fill(video.description)}
+  </figcaption>
+</figure>
+
+<script>
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll<HTMLElement>('[data-demo]').forEach((figure) => {
+    const video = figure.querySelector<HTMLVideoElement>('video');
+    const button = figure.querySelector<HTMLButtonElement>('.demo__toggle');
+    const label = figure.querySelector<HTMLElement>('.demo__toggle-label');
+    if (!video || !button || !label) return;
+
+    video.controls = false;
+    button.hidden = false;
+    let visible = false;
+    let userPaused = reduced;
+
+    const sync = () => {
+      const playing = !video.paused;
+      button.setAttribute('aria-pressed', String(!playing));
+      label.textContent = playing ? button.dataset.pause! : button.dataset.play!;
+      figure.classList.toggle('is-playing', playing);
+    };
+    const play = () => {
+      video.play().then(sync).catch(sync);
+    };
+
+    button.addEventListener('click', () => {
+      if (video.paused) {
+        userPaused = false;
+        play();
+      } else {
+        userPaused = true;
+        video.pause();
+        sync();
+      }
+    });
+    video.addEventListener('play', sync);
+    video.addEventListener('pause', sync);
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(
+        ([entry]) => {
+          visible = entry.isIntersecting;
+          if (visible && !userPaused) play();
+          if (!visible && !video.paused) video.pause();
+        },
+        { threshold: 0.5 },
+      ).observe(video);
+    }
+    sync();
+  });
+</script>

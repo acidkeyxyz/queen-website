@@ -17,6 +17,15 @@ const sample = z.object({
   rows: z.array(z.object({ label: z.string(), value: z.string(), tone })).min(2),
 });
 
+const video = z.object({
+  webm: z.string(),
+  mp4: z.string(),
+  poster: z.string(),
+  width: z.number(),
+  height: z.number(),
+  description: z.string().min(40),
+});
+
 const blocks = z.array(
   z.discriminatedUnion('type', [
     z.object({
@@ -36,6 +45,14 @@ const blocks = z.array(
       lede: z.string(),
       before: z.object({ title: z.string(), items: z.array(z.string()).min(3) }),
       after: z.object({ title: z.string(), items: z.array(z.string()).min(3) }),
+    }),
+    z.object({
+      type: z.literal('demo'),
+      title: z.string(),
+      lede: z.string(),
+      bullets: z.array(z.string()).min(2),
+      cta: link,
+      video,
     }),
     z.object({
       type: z.literal('journey'),
@@ -132,6 +149,7 @@ const modules = defineCollection({
     highlights: z.array(titled).min(3),
     idealFor: z.array(z.string()).default([]),
     sample,
+    video: video.optional(),
     faqs: z.array(faq).min(3),
   }),
 });

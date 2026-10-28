@@ -26,6 +26,9 @@ Create a JSON file in `src/content/pages/es-mx/` with a `slug`, `title`, SEO fie
 ## Scroll animations
 Nothing to configure. Anything with `data-reveal` fades in as it enters the screen. People who set "reduce motion" in their system see everything static.
 
+## Replace the demo video
+Put the new recording at `src/assets/media/mazda-hatchback-3d.mov` and run `pnpm video:encode` (needs `ffmpeg`). It writes the WebM, MP4 and poster into `public/media/`; commit them. The caption text lives in `description` of the `demo` block in `home.json` and in `checkin.json`: update it so it still describes what the video shows. Keep recordings short and muted, and never show real customer data.
+
 ## Logo
 Replace `src/assets/brand/yuriapp-logo-master.png`, then run `pnpm brand:assets` and commit the files it generates in `public/`.
 

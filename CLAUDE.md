@@ -35,6 +35,11 @@ Researched options: ScrollMagic is effectively superseded (GreenSock recommends 
 - **Gotcha:** the fade uses `filter: opacity()`, not `opacity`. Lighthouse/axe sample elements mid-animation and report false contrast failures on a plain `opacity` fade. Resting states are AAA; do not switch it back.
 - Do not animate text opacity in the problem band: a faded card would break AAA contrast.
 
+## Demo video
+- Master `src/assets/media/mazda-hatchback-3d.mov`; `pnpm video:encode` produces `public/media/mazda3-hatchback-3d.{webm,mp4}` and the poster (crops a 14 px edge strip, 30 fps, no audio). Commit the outputs.
+- `VideoDemo.astro` is used by the `demo` block (home) and by `video` in a module JSON (`checkin`). WebM is listed first, MP4 is the Safari fallback; `preload="none"` plus a poster keeps it out of the LCP.
+- Autoplay only while at least 50% visible and never under `prefers-reduced-motion`; the visible pause/play button is required (WCAG 2.2.2 for motion over 5 s). Without JS the native `controls` stay on. The text `description` is the text alternative and is schema-enforced (40+ characters).
+
 ## Design tokens (sampled from the logo, `src/assets/brand/yuriapp-logo-master.png`)
 | Token | Value | Use |
 |---|---|---|

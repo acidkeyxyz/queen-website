@@ -106,6 +106,28 @@
       }
     },
     {
+      "type": "demo",
+      "title": "Recibe el auto girándolo en 3D, no describiéndolo",
+      "lede": "Toca la pieza dañada sobre el modelo y queda registrada. Así se ve la recepción de {brand} con un Mazda 3 Hatchback.",
+      "bullets": [
+        "Gira el auto y marca los daños pieza por pieza",
+        "Las partidas del presupuesto marcan las piezas por ti",
+        "Queda constancia de cómo llegó el auto"
+      ],
+      "cta": {
+        "label": "Ver la recepción en 3D",
+        "href": "module:checkin"
+      },
+      "video": {
+        "webm": "/media/mazda3-hatchback-3d.webm",
+        "mp4": "/media/mazda3-hatchback-3d.mp4",
+        "poster": "/media/mazda3-hatchback-3d-poster.jpg",
+        "width": 636,
+        "height": 342,
+        "description": "Video sin audio de 7 segundos. Un modelo 3D de un Mazda 3 Hatchback gris gira para mostrarse de atrás, de frente y de lado. Al pasar el cursor sobre las llantas y la salpicadera, esas piezas se resaltan en rosa, como en la recepción del vehículo."
+      }
+    },
+    {
       "type": "journey",
       "title": "El recorrido completo del auto",
       "lede": "Nueve etapas conectadas, del primer presupuesto a la métrica del mes.",
