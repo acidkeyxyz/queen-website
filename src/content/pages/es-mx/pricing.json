@@ -1,0 +1,100 @@
+{
+  "slug": "precios",
+  "nav": true,
+  "order": 2,
+  "title": "Precios",
+  "seoTitle": "Precios de YuriApp: plan Gratis, Taller y Empresarial",
+  "seoDescription": "Plan Gratis sin vencimiento, plan Taller de $190 MXN por usuario al mes y plan Empresarial a convenir. Compara los planes de YuriApp.",
+  "blocks": [
+    {
+      "type": "pricing",
+      "title": "Planes y precios",
+      "lede": "Cada taller empieza gratis. Pagas más cuando creces en usuarios o sucursales.",
+      "footnote": "Precios en MXN. El plan Gratis no tiene periodo de prueba que venza.",
+      "plans": [
+        {
+          "key": "FREE",
+          "name": "Gratis",
+          "price": "$0",
+          "unit": "sin vencimiento",
+          "users": "1 usuario",
+          "branches": "1 sucursal",
+          "features": [
+            "Todas las funciones del sistema",
+            "Sin periodo de prueba que venza",
+            "Tu propio espacio en tutaller.yuriapp"
+          ],
+          "cta": {
+            "label": "Crear cuenta gratis",
+            "href": "app:signup"
+          }
+        },
+        {
+          "key": "TEAM",
+          "name": "Taller",
+          "price": "$190",
+          "unit": "MXN por usuario al mes",
+          "users": "Hasta 10 usuarios",
+          "branches": "2 sucursales",
+          "featured": true,
+          "features": [
+            "Se cobra cada usuario, con mínimo de 2",
+            "Con 2 usuarios son $380 MXN al mes",
+            "Cobro con Stripe, en pesos"
+          ],
+          "cta": {
+            "label": "Crear cuenta",
+            "href": "app:signup"
+          }
+        },
+        {
+          "key": "ENTERPRISE",
+          "name": "Empresarial",
+          "price": "A convenir",
+          "unit": "precio por acuerdo",
+          "users": "Usuarios ilimitados",
+          "branches": "Sucursales ilimitadas",
+          "features": [
+            "Para más de 10 usuarios",
+            "Precio y límites por acuerdo"
+          ],
+          "cta": {
+            "label": "Hablar con ventas",
+            "href": "app:sales"
+          }
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas sobre planes",
+      "items": [
+        {
+          "q": "¿El plan gratuito se acaba?",
+          "a": "No. El plan Gratis no tiene periodo de prueba que venza, así un taller nunca pierde el acceso a su propia información. Incluye 1 usuario y 1 sucursal."
+        },
+        {
+          "q": "¿Cuánto cuesta el plan Taller?",
+          "a": "$190 MXN por usuario al mes, con mínimo de 2 usuarios y hasta 10 usuarios y 2 sucursales. Se cobra cada usuario."
+        },
+        {
+          "q": "¿Puedo traer los datos que ya tengo?",
+          "a": "Sí. {brand} permite importar archivos CSV para traer los datos que ya tiene el taller."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "¿Más de 10 usuarios?",
+      "text": "El plan Empresarial se acuerda contigo: precio y límites por convenio.",
+      "primary": {
+        "label": "Hablar con ventas",
+        "href": "app:sales"
+      },
+      "secondary": {
+        "label": "Crear cuenta gratis",
+        "href": "app:signup"
+      }
+    }
+  ]
+}

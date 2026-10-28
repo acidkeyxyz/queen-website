@@ -1,0 +1,33 @@
+{
+  "slug": "contacto",
+  "nav": true,
+  "order": 3,
+  "title": "Contacto",
+  "seoTitle": "Contacto y ventas de YuriApp",
+  "seoDescription": "Escríbenos para resolver dudas sobre YuriApp, planes Empresarial o la importación de los datos de tu taller. Te respondemos por correo.",
+  "blocks": [
+    {
+      "type": "contact",
+      "title": "Hablemos de tu taller",
+      "text": "Cuéntanos cuántos usuarios y sucursales tienes y qué hoy te cuesta más trabajo controlar."
+    },
+    {
+      "type": "faq",
+      "title": "Antes de escribir",
+      "items": [
+        {
+          "q": "¿Para qué tipo de taller es {brand}?",
+          "a": "Para talleres de hojalatería y pintura, y para llanteras y venta de rines. Desde un taller de una sola persona hasta operaciones con varias sucursales."
+        },
+        {
+          "q": "¿El plan gratuito se acaba?",
+          "a": "No. El plan Gratis no tiene periodo de prueba que venza, así un taller nunca pierde el acceso a su propia información. Incluye 1 usuario y 1 sucursal."
+        },
+        {
+          "q": "¿Cuánto cuesta el plan Taller?",
+          "a": "$190 MXN por usuario al mes, con mínimo de 2 usuarios y hasta 10 usuarios y 2 sucursales. Se cobra cada usuario."
+        }
+      ]
+    }
+  ]
+}

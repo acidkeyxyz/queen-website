@@ -1,0 +1,24 @@
+---
+import { fill } from '@/lib/text';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'prose'>;
+  pageTitle: string;
+  level?: 1 | 2;
+}
+const { block, pageTitle, level = 2 } = Astro.props;
+const Tag = level === 1 ? 'h1' : 'h2';
+---
+<section class="section prose">
+  <div class="container container--narrow">
+    <Tag class="section__title" data-reveal>{pageTitle}</Tag>
+    {block.sections.map((s) => (
+      <div class="prose__section">
+        {s.title && <h2 class="prose__title">{fill(s.title)}</h2>}
+        {s.paragraphs.map((p) => <p>{fill(p)}</p>)}
+      </div>
+    ))}
+  </div>
+</section>

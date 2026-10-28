@@ -1,0 +1,74 @@
+{
+  "order": 8,
+  "slug": "membresias",
+  "icon": "loyalty",
+  "cardTitle": "Membresías",
+  "cardTagline": "Tarjeta de sellos para que regresen",
+  "title": "Haz que tus clientes regresen con membresías",
+  "lede": "Ofrece membresías tipo tarjeta de sellos para que los clientes vuelvan al taller, y consulta cómo se comportan en las métricas.",
+  "seoTitle": "Membresías de clientes para talleres y llanteras | YuriApp",
+  "seoDescription": "Crea membresías tipo tarjeta de sellos para tus clientes y consulta su desempeño en las métricas: una forma de que regresen a tu taller o llantera.",
+  "keywords": [
+    "membresías de clientes",
+    "tarjeta de sellos taller",
+    "lealtad de clientes"
+  ],
+  "highlights": [
+    {
+      "title": "Tipo tarjeta de sellos",
+      "text": "Una mecánica sencilla que el cliente entiende de inmediato."
+    },
+    {
+      "title": "Ligadas al expediente",
+      "text": "La membresía vive en el expediente del cliente, junto con sus vehículos."
+    },
+    {
+      "title": "Con métricas",
+      "text": "Las membresías aparecen en las métricas, así sabes si funcionan."
+    }
+  ],
+  "idealFor": [
+    "Llanteras con clientes recurrentes",
+    "Talleres que viven de recomendación y repetición"
+  ],
+  "sample": {
+    "title": "Membresía",
+    "rows": [
+      {
+        "label": "Cliente",
+        "value": "Ana López",
+        "tone": "idle"
+      },
+      {
+        "label": "Tipo",
+        "value": "Tarjeta de sellos",
+        "tone": "info"
+      },
+      {
+        "label": "Sellos",
+        "value": "3 de 6",
+        "tone": "warn"
+      },
+      {
+        "label": "Estado",
+        "value": "Activa",
+        "tone": "ok"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Cómo funcionan las membresías?",
+      "a": "Como una tarjeta de sellos: el cliente acumula visitas o servicios."
+    },
+    {
+      "q": "¿Dónde veo su desempeño?",
+      "a": "En las métricas de membresías."
+    },
+    {
+      "q": "¿Está incluido en el plan gratuito?",
+      "a": "Sí. El plan Gratis incluye todas las funciones del sistema, con 1 usuario y 1 sucursal."
+    }
+  ]
+}

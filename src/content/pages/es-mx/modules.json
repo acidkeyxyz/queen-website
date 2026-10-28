@@ -1,0 +1,29 @@
+{
+  "slug": "funciones",
+  "nav": true,
+  "order": 1,
+  "title": "Funciones",
+  "seoTitle": "Funciones de YuriApp para talleres y llanteras",
+  "seoDescription": "Presupuestos, recepción en 3D, Mi Garage, órdenes de trabajo, pintura, calidad, cobros, membresías y métricas: las funciones de YuriApp.",
+  "blocks": [
+    {
+      "type": "modules",
+      "title": "Las funciones de {brand}",
+      "lede": "Nueve etapas que acompañan al auto del primer presupuesto a la entrega y a la métrica del mes.",
+      "showAll": true
+    },
+    {
+      "type": "cta",
+      "title": "Pruébalo con tu propio taller",
+      "text": "El plan Gratis incluye todas las funciones, con 1 usuario y 1 sucursal.",
+      "primary": {
+        "label": "Crear cuenta gratis",
+        "href": "app:signup"
+      },
+      "secondary": {
+        "label": "Ver precios",
+        "href": "page:pricing"
+      }
+    }
+  ]
+}

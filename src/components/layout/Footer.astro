@@ -1,0 +1,45 @@
+---
+import { business } from '@/lib/business';
+import { site } from '@/lib/site';
+import { t } from '@/i18n';
+
+const year = new Date().getFullYear();
+---
+<footer class="ftr">
+  <div class="container ftr__grid">
+    <div class="ftr__about">
+      <p class="ftr__name">{business.name}</p>
+      <p class="ftr__tag">{business.tagline}</p>
+    </div>
+    <nav aria-label={t.footer.product}>
+      <h2 class="ftr__h">{t.footer.product}</h2>
+      <ul>
+        {site.modules.map((m) => (
+          <li><a href={site.href.moduleEntry(m.data.slug)}>{m.data.cardTitle}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <nav aria-label={t.footer.company}>
+      <h2 class="ftr__h">{t.footer.company}</h2>
+      <ul>
+        <li><a href={site.href.page('pricing')}>{t.nav.pricing}</a></li>
+        <li><a href={site.href.page('contact')}>{t.nav.contact}</a></li>
+        <li><a href={site.href.page('privacy')}>{t.footer.privacy}</a></li>
+      </ul>
+    </nav>
+    <nav aria-label={t.footer.account}>
+      <h2 class="ftr__h">{t.footer.account}</h2>
+      <ul>
+        <li><a href={business.appLogin}>{t.nav.login}</a></li>
+        <li><a href={business.appSignup}>{t.cta.signup}</a></li>
+        <li><a href={business.appSales}>{t.cta.sales}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container ftr__bottom">
+    <p>© {year} {business.hasLegalName ? business.legalName : business.name}. {t.footer.rights}</p>
+    <p class="ftr__credit">
+      {t.footer.built} · {t.footer.createdBy} <a href={business.developer.url} target="_blank" rel="noopener">{business.developer.name}<span class="sr-only"> {t.a11y.newWindow}</span></a> · {business.developer.company}
+    </p>
+  </div>
+</footer>

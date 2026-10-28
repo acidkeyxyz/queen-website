@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import BlockList from '@/components/blocks/BlockList.astro';
+import Breadcrumbs from '@/components/layout/Breadcrumbs.astro';
+import { buildGraph } from '@/lib/schema';
+import { fill } from '@/lib/text';
+import { t } from '@/i18n';
+
+interface Props {
+  entry: CollectionEntry<'pages'>;
+}
+const { entry } = Astro.props;
+const page = entry.data;
+const path = page.slug ? `/${page.slug}/` : '/';
+const isHome = page.view === 'home';
+const crumbs = isHome ? [{ name: t.a11y.home, path: '/' }] : [{ name: t.a11y.home, path: '/' }, { name: page.title, path }];
+const faqs = page.blocks.flatMap((b) => (b.type === 'faq' ? b.items.map((i) => ({ q: fill(i.q), a: fill(i.a) })) : []));
+const graph = buildGraph({ path, title: page.seoTitle, description: page.seoDescription, crumbs, faqs });
+---
+<Base title={page.seoTitle} description={page.seoDescription} path={path} graph={graph} noindex={page.noindex}>
+  {!isHome && <div class="container"><Breadcrumbs crumbs={crumbs} /></div>}
+  <BlockList blocks={page.blocks} pageTitle={page.title} firstIsH1={!isHome} />
+</Base>

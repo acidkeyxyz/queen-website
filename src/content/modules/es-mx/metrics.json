@@ -1,0 +1,74 @@
+{
+  "order": 9,
+  "slug": "metricas",
+  "icon": "chart",
+  "cardTitle": "Métricas",
+  "cardTagline": "Ventas, tareas, membresías y costos",
+  "title": "Métricas para decidir con datos, no con intuición",
+  "lede": "Consulta métricas de ventas, tareas, membresías y costos, y recibe un resumen diario del estado del taller.",
+  "seoTitle": "Métricas de ventas, tareas y costos para talleres | YuriApp",
+  "seoDescription": "Métricas de ventas, tareas, membresías y costos, más un resumen diario del estado del taller, para que el dueño sepa cómo va el negocio.",
+  "keywords": [
+    "métricas de taller",
+    "indicadores de ventas",
+    "resumen diario del taller"
+  ],
+  "highlights": [
+    {
+      "title": "Ventas, tareas y costos",
+      "text": "Los números del taller en un solo lugar, calculados de lo que ya capturaste."
+    },
+    {
+      "title": "Resumen diario",
+      "text": "Un resumen diario del estado del taller para el dueño."
+    },
+    {
+      "title": "Membresías incluidas",
+      "text": "Mide también el desempeño de las membresías de tus clientes."
+    }
+  ],
+  "idealFor": [
+    "Dueños que hoy no pueden responder lo básico del negocio",
+    "Operaciones con varias sucursales"
+  ],
+  "sample": {
+    "title": "Resumen",
+    "rows": [
+      {
+        "label": "Autos en el taller",
+        "value": "Actualizado",
+        "tone": "info"
+      },
+      {
+        "label": "Tareas atrasadas",
+        "value": "Por revisar",
+        "tone": "warn"
+      },
+      {
+        "label": "Ventas del periodo",
+        "value": "Calculadas",
+        "tone": "ok"
+      },
+      {
+        "label": "Costos",
+        "value": "Calculados",
+        "tone": "ok"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Qué métricas incluye?",
+      "a": "Ventas, tareas, membresías y costos."
+    },
+    {
+      "q": "¿Hay un resumen para el dueño?",
+      "a": "Sí, un resumen diario del estado del taller."
+    },
+    {
+      "q": "¿Necesito capturar datos extra?",
+      "a": "No. Las métricas salen de lo que ya registras al cotizar, trabajar y cobrar."
+    }
+  ]
+}

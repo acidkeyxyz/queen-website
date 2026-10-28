@@ -1,0 +1,35 @@
+---
+import Icon from '@/components/Icon.astro';
+import SectionHead from './SectionHead.astro';
+import { fill } from '@/lib/text';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'problem'>;
+  level?: 1 | 2;
+}
+const { block, level = 2 } = Astro.props;
+const Inner = level === 1 ? 'h2' : 'h3';
+---
+<section class="section section--paper problem">
+  <div class="container">
+    <SectionHead title={block.title} lede={block.lede} level={level} />
+    <div class="problem__grid">
+      <div class="problem__col problem__col--before">
+        <Inner>{fill(block.before.title)}</Inner>
+        <ul>
+          {block.before.items.map((item) => <li>{fill(item)}</li>)}
+        </ul>
+      </div>
+      <div class="problem__col problem__col--after">
+        <Inner>{fill(block.after.title)}</Inner>
+        <ul>
+          {block.after.items.map((item) => (
+            <li><Icon name="check" size={20} /><span>{fill(item)}</span></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,74 @@
+{
+  "order": 4,
+  "slug": "ordenes-de-trabajo",
+  "icon": "wrench",
+  "cardTitle": "Órdenes de trabajo",
+  "cardTagline": "Tareas por especialista y mano de obra",
+  "title": "Órdenes de trabajo con tareas para cada especialista",
+  "lede": "Asigna tareas a hojalateros, pintores, preparadores, pulidores y mecánicos, con catálogo de tareas y costo de mano de obra.",
+  "seoTitle": "Órdenes de trabajo para talleres de hojalatería y pintura | YuriApp",
+  "seoDescription": "Crea órdenes de trabajo y asigna tareas a hojalateros, pintores, preparadores, pulidores y mecánicos, con catálogo de tareas y costo de mano de obra.",
+  "keywords": [
+    "orden de trabajo taller",
+    "tareas por especialista",
+    "costo de mano de obra"
+  ],
+  "highlights": [
+    {
+      "title": "Tareas por especialista",
+      "text": "Cada tarea se asigna a un hojalatero, pintor, preparador, pulidor o mecánico."
+    },
+    {
+      "title": "Catálogo de tareas",
+      "text": "Defines las tareas una vez, con su costo de mano de obra, y las reutilizas en cada orden."
+    },
+    {
+      "title": "Costo por orden",
+      "text": "La mano de obra suma al costo de la orden, así sabes cuánto costó cada trabajo."
+    }
+  ],
+  "idealFor": [
+    "Talleres con varios especialistas",
+    "Dueños que quieren saber quién hace qué"
+  ],
+  "sample": {
+    "title": "Orden de trabajo",
+    "rows": [
+      {
+        "label": "Hojalatería",
+        "value": "Asignada",
+        "tone": "info"
+      },
+      {
+        "label": "Preparación",
+        "value": "Pendiente",
+        "tone": "idle"
+      },
+      {
+        "label": "Pintura",
+        "value": "Pendiente",
+        "tone": "idle"
+      },
+      {
+        "label": "Pulido",
+        "value": "Pendiente",
+        "tone": "idle"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Qué especialistas se pueden asignar?",
+      "a": "Hojalatero, pintor, preparador, pulidor y mecánico."
+    },
+    {
+      "q": "¿Puedo definir el costo de cada tarea?",
+      "a": "Sí. El catálogo de tareas guarda el costo de mano de obra de cada una."
+    },
+    {
+      "q": "¿La orden se relaciona con el presupuesto?",
+      "a": "Sí. Todo queda ligado al mismo cliente y vehículo, de modo que no se vuelve a capturar."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+---
+import Icon from '@/components/Icon.astro';
+import { business } from '@/lib/business';
+import { t } from '@/i18n';
+---
+<div class="dock" id="contact-dock">
+  <a class="btn btn--primary" href={business.appSignup}>{t.cta.signup}</a>
+  <a class="btn btn--ghost" href={business.appSales}>
+    <Icon name="chat" size={20} />
+    <span>{t.cta.sales}</span>
+  </a>
+</div>

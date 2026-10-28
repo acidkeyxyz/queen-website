@@ -1,0 +1,28 @@
+{
+  "name": "yuriapp-website",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "YuriApp — sistema ERP para talleres de hojalatería, pintura y llantas. Sitio estático Astro, contenido en JSON (es-MX), SEO, animaciones al hacer scroll con CSS.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "brand:assets": "node scripts/generate-brand-assets.mjs"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp"]
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "astro": "^5.18.2",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^5.9.3"
+  }
+}

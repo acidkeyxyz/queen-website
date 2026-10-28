@@ -1,0 +1,12 @@
+---
+interface Props {
+  to: number;
+  label?: string;
+}
+const { to } = Astro.props;
+---
+<span class="counter" style={`--to:${to}`}>
+  <span class="sr-only">{to}</span>
+  <span class="counter__static" aria-hidden="true">{to}</span>
+  <span class="counter__anim" aria-hidden="true"></span>
+</span>

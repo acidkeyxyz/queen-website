@@ -1,0 +1,34 @@
+---
+import Icon from '@/components/Icon.astro';
+import SectionHead from './SectionHead.astro';
+import { resolveHref } from '@/lib/links';
+import { fill } from '@/lib/text';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'pricing'>;
+  level?: 1 | 2;
+}
+const { block, level = 2 } = Astro.props;
+const Inner = level === 1 ? 'h2' : 'h3';
+---
+<section class="section section--paper pricing" id="precios">
+  <div class="container">
+    <SectionHead title={block.title} lede={block.lede} level={level} />
+    <ul class="plans">
+      {block.plans.map((plan, i: number) => (
+        <li class:list={['plan', { 'plan--featured': plan.featured }]} data-reveal style={`--i:${i}`}>
+          <Inner class="plan__name">{plan.name}</Inner>
+          <p class="plan__price"><span class="plan__amount">{plan.price}</span> <span class="plan__unit">{plan.unit}</span></p>
+          <p class="plan__limits">{plan.users} · {plan.branches}</p>
+          <ul class="plan__features">
+            {plan.features.map((f) => <li><Icon name="check" size={18} /><span>{fill(f)}</span></li>)}
+          </ul>
+          <a class:list={['btn', plan.featured ? 'btn--primary' : 'btn--outline']} href={resolveHref(plan.cta.href)}>{plan.cta.label}</a>
+        </li>
+      ))}
+    </ul>
+    <p class="pricing__foot">{fill(block.footnote)}</p>
+  </div>
+</section>

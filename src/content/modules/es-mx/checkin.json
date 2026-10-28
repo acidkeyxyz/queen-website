@@ -1,0 +1,74 @@
+{
+  "order": 2,
+  "slug": "recepcion-3d",
+  "icon": "car",
+  "cardTitle": "Recepción en 3D",
+  "cardTagline": "Marca los daños pieza por pieza",
+  "title": "Recibe el auto marcando los daños sobre un modelo 3D",
+  "lede": "Haz el check-in del vehículo sobre un auto 3D interactivo: los daños se marcan pieza por pieza y quedan registrados con lo acordado.",
+  "seoTitle": "Recepción de vehículos en 3D para talleres | YuriApp",
+  "seoDescription": "Registra la recepción del auto sobre un modelo 3D interactivo, marca los daños pieza por pieza y deja constancia de lo que se acordó con el cliente.",
+  "keywords": [
+    "check-in vehículo taller",
+    "recepción de auto 3D",
+    "registro de daños"
+  ],
+  "highlights": [
+    {
+      "title": "Auto 3D interactivo",
+      "text": "Toca la pieza dañada en el modelo del auto en lugar de describirla con palabras."
+    },
+    {
+      "title": "Las partidas marcan las piezas",
+      "text": "Las partidas del presupuesto marcan las piezas automáticamente, así no se captura dos veces."
+    },
+    {
+      "title": "Constancia para el cliente",
+      "text": "Queda registrado cómo llegó el auto y qué se acordó, para que nadie tenga que adivinarlo después."
+    }
+  ],
+  "idealFor": [
+    "Talleres de hojalatería y pintura",
+    "Talleres que reciben muchos autos por semana"
+  ],
+  "sample": {
+    "title": "Recepción",
+    "rows": [
+      {
+        "label": "Vehículo",
+        "value": "Hatchback gris",
+        "tone": "idle"
+      },
+      {
+        "label": "Daños marcados",
+        "value": "3 piezas",
+        "tone": "warn"
+      },
+      {
+        "label": "Salpicadera izquierda",
+        "value": "Golpe",
+        "tone": "warn"
+      },
+      {
+        "label": "Puerta trasera",
+        "value": "Rayón",
+        "tone": "info"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Tengo que dibujar los daños a mano?",
+      "a": "No. Tocas la pieza en el auto 3D y queda marcada; las partidas del presupuesto también marcan piezas."
+    },
+    {
+      "q": "¿Sirve para cualquier vehículo?",
+      "a": "El modelo 3D se adapta al tipo de vehículo. Si necesitas un modelo concreto, escríbenos para revisarlo."
+    },
+    {
+      "q": "¿Se puede usar desde el celular?",
+      "a": "Sí. {brand} es una aplicación web adaptable, instalable como PWA, y funciona dentro del taller."
+    }
+  ]
+}

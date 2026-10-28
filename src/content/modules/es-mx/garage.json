@@ -1,0 +1,74 @@
+{
+  "order": 3,
+  "slug": "mi-garage",
+  "icon": "garage",
+  "cardTitle": "Mi Garage",
+  "cardTagline": "Todos los autos del taller y su etapa",
+  "title": "Sabe qué autos tiene el taller y en qué etapa va cada uno",
+  "lede": "Mi Garage muestra cada auto que tiene el taller y en qué etapa va, para responder en segundos qué está en proceso y qué se atrasó.",
+  "seoTitle": "Mi Garage: los autos del taller y su etapa | YuriApp",
+  "seoDescription": "Mi Garage muestra cada auto que tiene tu taller y en qué etapa va, para saber qué está en proceso, qué se atrasó y qué falta entregar.",
+  "keywords": [
+    "control de autos en taller",
+    "seguimiento de vehículos",
+    "etapas de reparación"
+  ],
+  "highlights": [
+    {
+      "title": "Vista de todo el taller",
+      "text": "Cada auto que tienes en el taller aparece con su etapa, sin preguntar de mesa en mesa."
+    },
+    {
+      "title": "Etapa por vehículo",
+      "text": "Ves de un vistazo si el auto está en recepción, en trabajo, en pintura o listo para entregar."
+    },
+    {
+      "title": "Para el dueño y el equipo",
+      "text": "El mismo tablero lo usa quien atiende al cliente y quien trabaja el auto."
+    }
+  ],
+  "idealFor": [
+    "Dueños que hoy preguntan cuántos autos hay en el taller",
+    "Talleres con varios especialistas"
+  ],
+  "sample": {
+    "title": "Mi Garage",
+    "rows": [
+      {
+        "label": "Hatchback gris",
+        "value": "En pintura",
+        "tone": "info"
+      },
+      {
+        "label": "Sedán blanco",
+        "value": "Pendiente de piezas",
+        "tone": "warn"
+      },
+      {
+        "label": "Camioneta negra",
+        "value": "Lista para entregar",
+        "tone": "ok"
+      },
+      {
+        "label": "Compacto rojo",
+        "value": "Recepción",
+        "tone": "idle"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Qué muestra Mi Garage?",
+      "a": "Cada auto que tiene el taller y la etapa en la que va."
+    },
+    {
+      "q": "¿Sirve con varias sucursales?",
+      "a": "Sí. {brand} soporta varias sucursales; el plan Taller incluye 2 y el Empresarial no tiene límite."
+    },
+    {
+      "q": "¿Quién puede ver el tablero?",
+      "a": "Quien tenga permiso. {brand} maneja permisos por rol para que cada persona vea lo que le corresponde."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "order": 7,
+  "slug": "cobros",
+  "icon": "cash",
+  "cardTitle": "Cobros y gastos",
+  "cardTagline": "Pagos, gastos y costo por orden",
+  "title": "Cobra, registra gastos y conoce el costo de cada orden",
+  "lede": "Registra pagos con sus formas de pago, los gastos del taller y reportes de costo por orden para saber quién debe y qué dejó ganancia.",
+  "seoTitle": "Cobros, pagos y gastos para talleres | YuriApp",
+  "seoDescription": "Registra pagos y formas de pago, controla los gastos del taller y consulta reportes de costo por orden para saber quién debe y qué trabajos dejaron ganancia.",
+  "keywords": [
+    "control de pagos taller",
+    "gastos del taller",
+    "costo por orden de trabajo"
+  ],
+  "highlights": [
+    {
+      "title": "Pagos y formas de pago",
+      "text": "Registra cada pago y cómo se hizo, ligado a la orden y al cliente."
+    },
+    {
+      "title": "Gastos del taller",
+      "text": "Lleva los gastos junto con los ingresos en el mismo sistema."
+    },
+    {
+      "title": "Costo por orden",
+      "text": "Reportes de costo por orden para ver qué trabajos dejaron ganancia."
+    }
+  ],
+  "idealFor": [
+    "Dueños que quieren saber quién debe dinero",
+    "Talleres que hoy cuadran en hoja de cálculo"
+  ],
+  "sample": {
+    "title": "Cobro",
+    "rows": [
+      {
+        "label": "Total de la orden",
+        "value": "Registrado",
+        "tone": "idle"
+      },
+      {
+        "label": "Pagos recibidos",
+        "value": "Parcial",
+        "tone": "warn"
+      },
+      {
+        "label": "Forma de pago",
+        "value": "Registrada",
+        "tone": "info"
+      },
+      {
+        "label": "Saldo",
+        "value": "Pendiente",
+        "tone": "warn"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Puedo saber quién me debe?",
+      "a": "Sí. Los pagos quedan ligados a cada orden y cliente, así que el saldo pendiente se ve en el sistema."
+    },
+    {
+      "q": "¿Se registran los gastos?",
+      "a": "Sí. {brand} incluye gastos y reportes de costo por orden."
+    },
+    {
+      "q": "¿El cobro de mi suscripción cómo funciona?",
+      "a": "Con Stripe, en pesos mexicanos. Es independiente de los pagos que cobras a tus clientes."
+    }
+  ]
+}

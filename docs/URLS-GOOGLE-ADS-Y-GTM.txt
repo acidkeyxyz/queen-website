@@ -1,0 +1,15 @@
+Landing URLs per campaign (replace the domain once it is set in business.json)
+
+Brand / general ........ /
+Product overview ....... /funciones/
+Quotes ................. /funciones/presupuestos/
+3D check-in ............ /funciones/recepcion-3d/
+Shop floor (Mi Garage) . /funciones/mi-garage/
+Work orders ............ /funciones/ordenes-de-trabajo/
+Paint control .......... /funciones/pintura/
+Quality control ........ /funciones/calidad/
+Payments and costs ..... /funciones/cobros/
+Memberships ............ /funciones/membresias/
+Metrics ................ /funciones/metricas/
+Pricing ................ /precios/
+Contact ................ /contacto/

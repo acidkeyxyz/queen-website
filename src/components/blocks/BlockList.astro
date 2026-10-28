@@ -1,0 +1,31 @@
+---
+import Hero from './Hero.astro';
+import Problem from './Problem.astro';
+import Journey from './Journey.astro';
+import Modules from './Modules.astro';
+import Features from './Features.astro';
+import Stats from './Stats.astro';
+import Pricing from './Pricing.astro';
+import Faq from './Faq.astro';
+import Cta from './Cta.astro';
+import Contact from './Contact.astro';
+import Prose from './Prose.astro';
+
+import type { Block } from '@/lib/types';
+
+interface Props {
+  blocks: Block[];
+  pageTitle: string;
+  firstIsH1: boolean;
+}
+const { blocks, pageTitle, firstIsH1 } = Astro.props;
+const map: Record<string, any> = {
+  hero: Hero, problem: Problem, journey: Journey, modules: Modules, features: Features, stats: Stats,
+  pricing: Pricing, faq: Faq, cta: Cta, contact: Contact, prose: Prose,
+};
+---
+{blocks.map((block, i) => {
+  const Component = map[block.type];
+  const level = firstIsH1 && i === 0 ? 1 : 2;
+  return <Component block={block} level={level} pageTitle={pageTitle} />;
+})}

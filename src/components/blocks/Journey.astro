@@ -1,0 +1,46 @@
+---
+import Icon from '@/components/Icon.astro';
+import SampleCard from '@/components/SampleCard.astro';
+import { site } from '@/lib/site';
+import { fill } from '@/lib/text';
+import { t } from '@/i18n';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'journey'>;
+  level?: 1 | 2;
+}
+const { block, level = 2 } = Astro.props;
+const Tag = level === 1 ? 'h1' : 'h2';
+---
+<section class="section journey" id="recorrido">
+  <div class="container journey__grid">
+    <header class="journey__intro">
+      <Tag class="section__title" data-reveal>{fill(block.title)}</Tag>
+      <p class="section__lede" data-reveal style="--i:1">{fill(block.lede)}</p>
+    </header>
+    <ol class="journey__list">
+      {block.stages.map((stage, i: number) => {
+        const mod = site.moduleByKey(stage.module);
+        return (
+          <li class="journey__item">
+            <span class="journey__num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <div class="journey__card" data-reveal="right">
+            <div class="journey__body">
+              <p class="journey__stage"><span class="sr-only">{t.module.stage} {i + 1}: </span>{stage.label}</p>
+              <h3 class="journey__title">{mod.data.cardTitle}</h3>
+              <p>{fill(stage.text)}</p>
+              <a class="link-arrow" href={site.href.module(stage.module)}>
+                <span>{t.cta.seeModule}<span class="sr-only">: {mod.data.cardTitle}</span></span>
+                <Icon name="arrow" size={18} />
+              </a>
+            </div>
+            <SampleCard sample={mod.data.sample} class="journey__sample" />
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  </div>
+</section>

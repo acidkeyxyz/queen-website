@@ -1,0 +1,55 @@
+<script>
+  const root = document.documentElement;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const nativeTimeline = typeof CSS !== 'undefined' && CSS.supports('animation-timeline: view()');
+
+  root.classList.add('js-chrome');
+
+  let lastY = window.scrollY;
+  let ticking = false;
+  const update = () => {
+    const y = window.scrollY;
+    root.classList.toggle('at-top', y < 24);
+    if (Math.abs(y - lastY) > 8) {
+      root.classList.toggle('scroll-down', y > lastY && y > 120);
+      lastY = y;
+    }
+    ticking = false;
+  };
+  update();
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    },
+    { passive: true },
+  );
+
+  const footerBottom = document.querySelector('.ftr__bottom');
+  if (footerBottom && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => root.classList.toggle('at-end', entry.isIntersecting)).observe(footerBottom);
+  }
+
+  if (!nativeTimeline && !reduced) {
+    const targets = document.querySelectorAll<HTMLElement>('[data-reveal]');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add('is-in');
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { rootMargin: '0px 0px -12% 0px', threshold: 0.08 },
+      );
+      targets.forEach((el) => io.observe(el));
+    } else {
+      targets.forEach((el) => el.classList.add('is-in'));
+    }
+  }
+</script>

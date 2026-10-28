@@ -1,0 +1,332 @@
+{
+  "slug": "",
+  "view": "home",
+  "title": "Inicio",
+  "seoTitle": "YuriApp: sistema para talleres de hojalatería y pintura",
+  "seoDescription": "YuriApp reúne presupuestos, recepción en 3D, órdenes de trabajo, pintura, calidad y cobros en un solo sistema para talleres y llanteras en México.",
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "Sistema para talleres de hojalatería, pintura y llantas",
+      "title": "Cada auto del taller, del presupuesto a la entrega, en un solo lugar",
+      "lede": "{brand} reúne presupuestos, recepción en 3D, órdenes de trabajo, pintura, control de calidad y cobros. Funciona en el celular, dentro del taller.",
+      "primary": {
+        "label": "Crear cuenta gratis",
+        "href": "app:signup"
+      },
+      "secondary": {
+        "label": "Ver las funciones",
+        "href": "page:modules"
+      },
+      "note": "Plan gratuito sin fecha de vencimiento.",
+      "pills": [
+        "Hojalatería",
+        "Pintura",
+        "Llanteras y rines",
+        "Taller de una persona",
+        "Varias sucursales"
+      ],
+      "stack": [
+        {
+          "title": "Presupuesto",
+          "rows": [
+            {
+              "label": "Cliente",
+              "value": "Ana López",
+              "tone": "idle"
+            },
+            {
+              "label": "Partidas",
+              "value": "5",
+              "tone": "info"
+            },
+            {
+              "label": "Estado",
+              "value": "Enviado por WhatsApp",
+              "tone": "ok"
+            }
+          ],
+          "badge": "Ejemplo"
+        },
+        {
+          "title": "Mi Garage",
+          "rows": [
+            {
+              "label": "Hatchback gris",
+              "value": "En pintura",
+              "tone": "info"
+            },
+            {
+              "label": "Camioneta negra",
+              "value": "Lista para entregar",
+              "tone": "ok"
+            }
+          ],
+          "badge": "Ejemplo"
+        },
+        {
+          "title": "Control de calidad",
+          "rows": [
+            {
+              "label": "Acabado de pintura",
+              "value": "Revisado",
+              "tone": "ok"
+            },
+            {
+              "label": "Puntos de seguridad",
+              "value": "Por revisar",
+              "tone": "warn"
+            }
+          ],
+          "badge": "Ejemplo"
+        }
+      ]
+    },
+    {
+      "type": "problem",
+      "title": "Del caos de WhatsApp y libretas a un sistema que sigue al auto",
+      "lede": "El dueño no debería necesitar preguntar de mesa en mesa para saber qué pasa en su taller.",
+      "before": {
+        "title": "Hoy",
+        "items": [
+          "No sabes qué autos están en el taller ni en qué etapa van",
+          "Los presupuestos se vuelven a capturar una y otra vez",
+          "Nadie puede mostrar al cliente lo que se acordó al recibir el auto",
+          "No se sabe cuánta pintura se usó ni qué trabajos dejaron ganancia"
+        ]
+      },
+      "after": {
+        "title": "Con {brand}",
+        "items": [
+          "Mi Garage muestra cada auto y su etapa",
+          "Un presupuesto alimenta la recepción y la orden de trabajo",
+          "La recepción en 3D deja constancia pieza por pieza",
+          "Pintura y cobros dan el costo real de cada orden"
+        ]
+      }
+    },
+    {
+      "type": "journey",
+      "title": "El recorrido completo del auto",
+      "lede": "Nueve etapas conectadas, del primer presupuesto a la métrica del mes.",
+      "stages": [
+        {
+          "module": "quotes",
+          "label": "Presupuesto",
+          "text": "Cotiza con tu catálogo y envía por WhatsApp."
+        },
+        {
+          "module": "checkin",
+          "label": "Recepción",
+          "text": "Marca los daños pieza por pieza sobre un auto 3D."
+        },
+        {
+          "module": "garage",
+          "label": "En el taller",
+          "text": "Mira cada auto y la etapa en la que va."
+        },
+        {
+          "module": "work-orders",
+          "label": "Trabajo",
+          "text": "Asigna tareas a cada especialista."
+        },
+        {
+          "module": "paint",
+          "label": "Pintura",
+          "text": "Registra fórmulas e insumos pesados."
+        },
+        {
+          "module": "quality",
+          "label": "Calidad",
+          "text": "Inspecciona antes de entregar."
+        },
+        {
+          "module": "payments",
+          "label": "Cobro",
+          "text": "Registra pagos, gastos y costo por orden."
+        },
+        {
+          "module": "memberships",
+          "label": "Lealtad",
+          "text": "Haz que el cliente regrese."
+        },
+        {
+          "module": "metrics",
+          "label": "Visión",
+          "text": "Decide con métricas y un resumen diario."
+        }
+      ]
+    },
+    {
+      "type": "modules",
+      "title": "Todo lo que necesita un taller, sin pegar herramientas",
+      "lede": "Cada función tiene su propia página con el detalle y las preguntas frecuentes.",
+      "showAll": false
+    },
+    {
+      "type": "features",
+      "title": "Hecho para talleres en México",
+      "lede": "Cada módulo salió de una necesidad real del taller, no de una suposición.",
+      "items": [
+        {
+          "icon": "cash",
+          "title": "Hecho para México",
+          "text": "Interfaz en español, precios en pesos, RFC en el expediente del cliente, comunicación por WhatsApp y zona horaria por empresa."
+        },
+        {
+          "icon": "phoneDevice",
+          "title": "Funciona en el celular",
+          "text": "Aplicación web adaptable, instalable como PWA. No hay servidores que instalar ni equipo de sistemas que contratar."
+        },
+        {
+          "icon": "branch",
+          "title": "Una o varias sucursales",
+          "text": "Desde un taller de una persona hasta operaciones con varias sucursales."
+        },
+        {
+          "icon": "lock",
+          "title": "Datos aislados por taller",
+          "text": "Cada taller tiene su subdominio, con sesiones ligadas a la empresa, permisos por rol y límite de intentos de inicio de sesión."
+        },
+        {
+          "icon": "eye",
+          "title": "Accesible desde el diseño",
+          "text": "Alto contraste, navegación con teclado y soporte para lectores de pantalla, con meta de WCAG AAA."
+        },
+        {
+          "icon": "shield",
+          "title": "Seguro para presentarlo",
+          "text": "El modo demo oculta todos los datos reales, así se puede mostrar en vivo sin exponer a ningún cliente."
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "title": "{brand} en números",
+      "items": [
+        {
+          "counter": "modules",
+          "label": "etapas conectadas, del presupuesto a las métricas"
+        },
+        {
+          "counter": "specialists",
+          "label": "tipos de especialista para asignar tareas"
+        },
+        {
+          "value": "~{clients}",
+          "label": "clientes registrados en {anchor}"
+        },
+        {
+          "value": "{since}",
+          "label": "año en que entró en producción"
+        }
+      ]
+    },
+    {
+      "type": "pricing",
+      "title": "Planes simples, en pesos mexicanos",
+      "lede": "Empieza gratis y crece cuando tu taller lo necesite.",
+      "footnote": "Precios en MXN. El plan Gratis no tiene periodo de prueba que venza.",
+      "plans": [
+        {
+          "key": "FREE",
+          "name": "Gratis",
+          "price": "$0",
+          "unit": "sin vencimiento",
+          "users": "1 usuario",
+          "branches": "1 sucursal",
+          "features": [
+            "Todas las funciones del sistema",
+            "Sin periodo de prueba que venza",
+            "Tu propio espacio en tutaller.yuriapp"
+          ],
+          "cta": {
+            "label": "Crear cuenta gratis",
+            "href": "app:signup"
+          }
+        },
+        {
+          "key": "TEAM",
+          "name": "Taller",
+          "price": "$190",
+          "unit": "MXN por usuario al mes",
+          "users": "Hasta 10 usuarios",
+          "branches": "2 sucursales",
+          "featured": true,
+          "features": [
+            "Se cobra cada usuario, con mínimo de 2",
+            "Con 2 usuarios son $380 MXN al mes",
+            "Cobro con Stripe, en pesos"
+          ],
+          "cta": {
+            "label": "Crear cuenta",
+            "href": "app:signup"
+          }
+        },
+        {
+          "key": "ENTERPRISE",
+          "name": "Empresarial",
+          "price": "A convenir",
+          "unit": "precio por acuerdo",
+          "users": "Usuarios ilimitados",
+          "branches": "Sucursales ilimitadas",
+          "features": [
+            "Para más de 10 usuarios",
+            "Precio y límites por acuerdo"
+          ],
+          "cta": {
+            "label": "Hablar con ventas",
+            "href": "app:sales"
+          }
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Para qué tipo de taller es {brand}?",
+          "a": "Para talleres de hojalatería y pintura, y para llanteras y venta de rines. Desde un taller de una sola persona hasta operaciones con varias sucursales."
+        },
+        {
+          "q": "¿El plan gratuito se acaba?",
+          "a": "No. El plan Gratis no tiene periodo de prueba que venza, así un taller nunca pierde el acceso a su propia información. Incluye 1 usuario y 1 sucursal."
+        },
+        {
+          "q": "¿Cuánto cuesta el plan Taller?",
+          "a": "$190 MXN por usuario al mes, con mínimo de 2 usuarios y hasta 10 usuarios y 2 sucursales. Se cobra cada usuario."
+        },
+        {
+          "q": "¿Necesito instalar algo o contratar a alguien de sistemas?",
+          "a": "No. {brand} es una aplicación web que funciona en cualquier celular o computadora y se puede instalar como PWA. No hay servidores que instalar."
+        },
+        {
+          "q": "¿Puedo traer los datos que ya tengo?",
+          "a": "Sí. {brand} permite importar archivos CSV para traer los datos que ya tiene el taller."
+        },
+        {
+          "q": "¿Mis datos están aislados de los de otros talleres?",
+          "a": "Sí. Cada taller tiene su propio subdominio y sus datos están aislados, con el aislamiento aplicado en la API. Las sesiones están ligadas a cada empresa."
+        },
+        {
+          "q": "¿Quién está detrás de {brand}?",
+          "a": "{brand} nació dentro de {anchor}, que lo usa en su operación diaria desde {since}, con cerca de {clients} clientes registrados."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Empieza con tu taller hoy",
+      "text": "Crea tu cuenta gratis y deja de preguntar de mesa en mesa qué pasa con cada auto.",
+      "primary": {
+        "label": "Crear cuenta gratis",
+        "href": "app:signup"
+      },
+      "secondary": {
+        "label": "Hablar con ventas",
+        "href": "app:sales"
+      }
+    }
+  ]
+}

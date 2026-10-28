@@ -1,0 +1,30 @@
+---
+import Counter from '@/components/Counter.astro';
+import SectionHead from './SectionHead.astro';
+import { site } from '@/lib/site';
+import { fill } from '@/lib/text';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'stats'>;
+  level?: 1 | 2;
+}
+const { block, level = 2 } = Astro.props;
+const counters: Record<string, number> = { modules: site.modules.length, specialists: 5 };
+---
+<section class="section section--ink stats">
+  <div class="container">
+    <SectionHead title={block.title} level={level} dark />
+    <dl class="stats__grid">
+      {block.items.map((item, i: number) => (
+        <div class="stat" data-reveal="scale" style={`--i:${i}`}>
+          <dt class="stat__value">
+            {item.counter ? <Counter to={counters[item.counter]} /> : fill(item.value ?? "")}
+          </dt>
+          <dd class="stat__label">{fill(item.label)}</dd>
+        </div>
+      ))}
+    </dl>
+  </div>
+</section>

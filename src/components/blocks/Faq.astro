@@ -1,0 +1,25 @@
+---
+import SectionHead from './SectionHead.astro';
+import { fill } from '@/lib/text';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'faq'>;
+  level?: 1 | 2;
+}
+const { block, level = 2 } = Astro.props;
+---
+<section class="section faq">
+  <div class="container container--narrow">
+    <SectionHead title={block.title} level={level} />
+    <div class="faq__list">
+      {block.items.map((item, i: number) => (
+        <details class="faq__item" data-reveal style={`--i:${Math.min(i, 3)}`}>
+          <summary>{fill(item.q)}</summary>
+          <p>{fill(item.a)}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

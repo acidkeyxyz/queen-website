@@ -1,0 +1,23 @@
+---
+import { resolveHref } from '@/lib/links';
+import { fill } from '@/lib/text';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'cta'>;
+  level?: 1 | 2;
+}
+const { block, level = 2 } = Astro.props;
+const Tag = level === 1 ? 'h1' : 'h2';
+---
+<section class="section section--ink cta">
+  <div class="container cta__inner" data-reveal="scale">
+    <Tag class="section__title">{fill(block.title)}</Tag>
+    <p class="section__lede">{fill(block.text)}</p>
+    <div class="cta__actions">
+      <a class="btn btn--accent" href={resolveHref(block.primary.href)}>{block.primary.label}</a>
+      <a class="btn btn--outline-inv" href={resolveHref(block.secondary.href)}>{block.secondary.label}</a>
+    </div>
+  </div>
+</section>

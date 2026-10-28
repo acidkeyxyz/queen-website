@@ -1,0 +1,75 @@
+{
+  "order": 1,
+  "slug": "presupuestos",
+  "icon": "quote",
+  "cardTitle": "Presupuestos",
+  "cardTagline": "Cotiza con tu catálogo y envía por WhatsApp",
+  "title": "Presupuestos que salen en minutos, desde tu catálogo",
+  "lede": "Arma el presupuesto con tu catálogo de productos y servicios y envíalo al cliente por WhatsApp, sin volver a capturar nada.",
+  "seoTitle": "Presupuestos para talleres con catálogo y WhatsApp | YuriApp",
+  "seoDescription": "Crea presupuestos de hojalatería, pintura y llantas desde tu catálogo de productos y servicios y envíalos al cliente por WhatsApp.",
+  "keywords": [
+    "presupuesto taller hojalatería",
+    "cotizador taller de pintura",
+    "presupuesto por WhatsApp"
+  ],
+  "highlights": [
+    {
+      "title": "Catálogo de productos y servicios",
+      "text": "Cada partida sale de tu catálogo, con su precio, para no teclear lo mismo en cada presupuesto."
+    },
+    {
+      "title": "Envío por WhatsApp",
+      "text": "El cliente recibe el presupuesto en el canal que ya usa, y tú ves lo que se le mandó."
+    },
+    {
+      "title": "Parte del mismo expediente",
+      "text": "El presupuesto queda ligado al cliente y a su vehículo, y alimenta la recepción y la orden de trabajo."
+    }
+  ],
+  "idealFor": [
+    "Talleres de hojalatería y pintura",
+    "Llanteras y venta de rines",
+    "Talleres donde hoy se cotiza en libreta o en hoja de cálculo"
+  ],
+  "sample": {
+    "title": "Presupuesto",
+    "rows": [
+      {
+        "label": "Cliente",
+        "value": "Ana López",
+        "tone": "idle"
+      },
+      {
+        "label": "Vehículo",
+        "value": "Hatchback gris",
+        "tone": "idle"
+      },
+      {
+        "label": "Partidas",
+        "value": "5",
+        "tone": "info"
+      },
+      {
+        "label": "Estado",
+        "value": "Enviado por WhatsApp",
+        "tone": "ok"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿De dónde salen los precios del presupuesto?",
+      "a": "De tu catálogo de productos y servicios. Lo cargas una vez y lo reutilizas en cada presupuesto."
+    },
+    {
+      "q": "¿Cómo recibe el cliente el presupuesto?",
+      "a": "Por WhatsApp. El sistema lo envía desde el propio presupuesto, sin copiar y pegar."
+    },
+    {
+      "q": "¿Puedo manejar precios distintos por tipo de cliente?",
+      "a": "Sí. El catálogo de productos admite precios para clientes mayoristas y preferentes, útil en llanteras y venta de rines."
+    }
+  ]
+}

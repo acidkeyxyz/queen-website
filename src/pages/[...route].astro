@@ -1,0 +1,21 @@
+---
+import PageView from '@/views/PageView.astro';
+import ModuleView from '@/views/ModuleView.astro';
+import { site } from '@/lib/site';
+
+export function getStaticPaths() {
+  const modulesBase = site.pageByKey('modules').data.slug;
+  const pages = site.pages.map((entry) => ({
+    params: { route: entry.data.slug || undefined },
+    props: { kind: 'page' as const, entry },
+  }));
+  const modules = site.modules.map((entry) => ({
+    params: { route: `${modulesBase}/${entry.data.slug}` },
+    props: { kind: 'module' as const, entry },
+  }));
+  return [...pages, ...modules];
+}
+
+const props = Astro.props;
+---
+{props.kind === 'page' ? <PageView entry={props.entry} /> : <ModuleView entry={props.entry} />}

@@ -1,0 +1,40 @@
+---
+import SampleCard from '@/components/SampleCard.astro';
+import Icon from '@/components/Icon.astro';
+import { resolveHref } from '@/lib/links';
+import { fill } from '@/lib/text';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'hero'>;
+}
+const { block } = Astro.props;
+---
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow" data-reveal>{fill(block.eyebrow)}</p>
+      <h1 class="hero__title" data-reveal style="--i:1">{fill(block.title)}</h1>
+      <p class="hero__lede" data-reveal style="--i:2">{fill(block.lede)}</p>
+      <div class="hero__cta" data-reveal style="--i:3">
+        <a class="btn btn--accent" href={resolveHref(block.primary.href)}>{block.primary.label}</a>
+        <a class="btn btn--outline-inv" href={resolveHref(block.secondary.href)}>
+          <span>{block.secondary.label}</span>
+          <Icon name="arrow" size={18} />
+        </a>
+      </div>
+      <p class="hero__note" data-reveal style="--i:4">{fill(block.note)}</p>
+      <ul class="hero__pills" aria-label="Tipos de taller">
+        {block.pills.map((p, i) => <li data-reveal style={`--i:${i + 5}`}>{p}</li>)}
+      </ul>
+    </div>
+    <div class="hero__stack" aria-hidden="false">
+      {block.stack.map((sample, i: number) => (
+        <div class={`hero__layer hero__layer--${i + 1}`} style={`--depth:${i + 1}`}>
+          <SampleCard sample={sample} />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

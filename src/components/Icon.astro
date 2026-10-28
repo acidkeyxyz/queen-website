@@ -1,0 +1,53 @@
+---
+interface Props {
+  name: string;
+  size?: number;
+  [key: string]: unknown;
+}
+const { name, size = 24, ...rest } = Astro.props;
+const paths: Record<string, string> = {
+  quote: 'M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z M14 3v5h5 M9 13h6 M9 17h4',
+  car: 'M3 13l2-6a2 2 0 0 1 2-1.5h10A2 2 0 0 1 19 7l2 6 M3 13h18 M3 13v4a1 1 0 0 0 1 1h1 M21 13v4a1 1 0 0 1-1 1h-1 M7.5 16.5h.01 M16.5 16.5h.01',
+  garage: 'M3 21V9l9-6 9 6v12 M7 21v-6h10v6 M7 18h10',
+  wrench: 'M14.7 6.3a4 4 0 0 0-5.4 5.1L3 17.7 6.3 21l6.3-6.3a4 4 0 0 0 5.1-5.4l-2.6 2.6-2.4-.6-.6-2.4z',
+  paint: 'M4 4h13v5H4z M17 6.5h3v6h-8v3 M10 15.5h4V21h-4z',
+  shield: 'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z M9 12l2 2 4-4',
+  cash: 'M3 7h18v10H3z M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z M6 10v4 M18 10v4',
+  loyalty: 'M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z',
+  chart: 'M4 20V4 M4 20h16 M8 16v-4 M12 16V8 M16 16v-7',
+  users: 'M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M2.5 20c.5-3.5 3-5.5 6.5-5.5s6 2 6.5 5.5 M16 4.5a3.5 3.5 0 0 1 0 6.5 M18 14.8c2 .6 3.2 2.3 3.5 5.2',
+  branch: 'M6 3v12 M6 18m-3 0a3 3 0 1 0 6 0 3 3 0 1 0-6 0 M18 6m-3 0a3 3 0 1 0 6 0 3 3 0 1 0-6 0 M18 9a9 9 0 0 1-9 9',
+  whatsapp: 'M4 20l1.3-4.2A8 8 0 1 1 8.4 18.8z M9 9.5c.5 2.5 2.5 4.5 5 5l1.2-1.2-2-1-.9.7a4 4 0 0 1-1.8-1.8l.7-.9-1-2z',
+  check: 'M5 12.5l4.5 4.5L19 7.5',
+  arrow: 'M5 12h14 M13 6l6 6-6 6',
+  chat: 'M4 5h16v11H9l-5 4z',
+  calendar: 'M4 6h16v14H4z M4 10h16 M8 3v4 M16 3v4',
+  cloud: 'M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 9.5a4 4 0 0 1-.5 8.5z',
+  upload: 'M12 16V4 M7 9l5-5 5 5 M4 20h16',
+  lock: 'M6 11h12v9H6z M8.5 11V8a3.5 3.5 0 0 1 7 0v3',
+  phone: 'M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z',
+  mail: 'M3 5h18v14H3z M3 7l9 6 9-6',
+  menu: 'M4 7h16 M4 12h16 M4 17h16',
+  close: 'M6 6l12 12 M18 6L6 18',
+  phoneDevice: 'M8 3h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z M11 18h2',
+  eye: 'M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z',
+};
+const d = paths[name];
+if (!d) throw new Error(`Icono desconocido: ${name}`);
+---
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+  {...rest}
+>
+  <path d={d}></path>
+</svg>

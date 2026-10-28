@@ -1,0 +1,16 @@
+---
+import { fill } from '@/lib/text';
+
+interface Props {
+  title: string;
+  lede?: string;
+  level?: 1 | 2;
+  dark?: boolean;
+}
+const { title, lede, level = 2, dark = false } = Astro.props;
+const Tag = level === 1 ? 'h1' : 'h2';
+---
+<header class:list={['section__head', { 'section__head--dark': dark }]}>
+  <Tag class="section__title" data-reveal>{fill(title)}</Tag>
+  {lede && <p class="section__lede" data-reveal style="--i:1">{fill(lede)}</p>}
+</header>

@@ -1,0 +1,17 @@
+---
+import { t } from '@/i18n';
+
+interface Props {
+  crumbs: { name: string; path: string }[];
+}
+const { crumbs } = Astro.props;
+---
+{crumbs.length > 1 && (
+  <nav class="crumbs" aria-label={t.a11y.breadcrumb}>
+    <ol>
+      {crumbs.map((c, i) => (
+        <li>{i === crumbs.length - 1 ? <span aria-current="page">{c.name}</span> : <a href={c.path}>{c.name}</a>}</li>
+      ))}
+    </ol>
+  </nav>
+)}

@@ -1,0 +1,88 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import Icon from '@/components/Icon.astro';
+import SampleCard from '@/components/SampleCard.astro';
+import Breadcrumbs from '@/components/layout/Breadcrumbs.astro';
+import { business } from '@/lib/business';
+import { buildGraph } from '@/lib/schema';
+import { site } from '@/lib/site';
+import { fill } from '@/lib/text';
+import { t } from '@/i18n';
+
+interface Props {
+  entry: CollectionEntry<'modules'>;
+}
+const { entry } = Astro.props;
+const m = entry.data;
+const path = site.href.moduleEntry(m.slug);
+const modulesPage = site.pageByKey('modules');
+const crumbs = [
+  { name: t.a11y.home, path: '/' },
+  { name: modulesPage.data.title, path: site.href.page('modules') },
+  { name: m.cardTitle, path },
+];
+const index = site.modules.findIndex((x) => x.id === entry.id);
+const next = site.modules[(index + 1) % site.modules.length];
+const faqs = m.faqs.map((f) => ({ q: fill(f.q), a: fill(f.a) }));
+const graph = buildGraph({ path, title: m.seoTitle, description: m.seoDescription, crumbs, faqs });
+---
+<Base title={m.seoTitle} description={m.seoDescription} path={path} graph={graph}>
+  <div class="container"><Breadcrumbs crumbs={crumbs} /></div>
+  <section class="module-hero">
+    <div class="container module-hero__grid">
+      <div>
+        <span class="card__icon" data-reveal><Icon name={m.icon} size={28} /></span>
+        <h1 class="module-hero__title" data-reveal style="--i:1">{fill(m.title)}</h1>
+        <p class="module-hero__lede" data-reveal style="--i:2">{fill(m.lede)}</p>
+        <div class="module-hero__cta" data-reveal style="--i:3">
+          <a class="btn btn--primary" href={business.appSignup}>{t.cta.signup}</a>
+          <a class="btn btn--outline" href={business.appSales}>{t.cta.sales}</a>
+        </div>
+      </div>
+      <SampleCard sample={m.sample} class="module-hero__sample" data-reveal="left" />
+    </div>
+  </section>
+  <section class="section section--paper">
+    <div class="container">
+      <header class="section__head"><h2 class="section__title" data-reveal>{t.module.highlights}</h2></header>
+      <ul class="features__grid">
+        {m.highlights.map((h, i) => (
+          <li class="feature" data-reveal="scale" style={`--i:${i}`}>
+            <span class="feature__icon"><Icon name="check" size={26} /></span>
+            <h3>{fill(h.title)}</h3>
+            <p>{fill(h.text)}</p>
+          </li>
+        ))}
+      </ul>
+      {m.idealFor.length > 0 && (
+        <ul class="ideal" aria-label="Ideal para">
+          {m.idealFor.map((x, i) => <li data-reveal style={`--i:${i}`}>{fill(x)}</li>)}
+        </ul>
+      )}
+    </div>
+  </section>
+  <section class="section faq">
+    <div class="container container--narrow">
+      <header class="section__head"><h2 class="section__title" data-reveal>{t.module.faq}</h2></header>
+      <div class="faq__list">
+        {m.faqs.map((f, i) => (
+          <details class="faq__item" data-reveal style={`--i:${i}`}>
+            <summary>{fill(f.q)}</summary>
+            <p>{fill(f.a)}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+  <section class="section section--ink cta">
+    <div class="container cta__inner" data-reveal="scale">
+      <h2 class="section__title">{t.module.next}</h2>
+      <p class="section__lede">{next.data.cardTitle}: {next.data.cardTagline}.</p>
+      <div class="cta__actions">
+        <a class="btn btn--accent" href={site.href.moduleEntry(next.data.slug)}>{next.data.cardTitle}</a>
+        <a class="btn btn--outline-inv" href={business.appSignup}>{t.cta.signup}</a>
+      </div>
+    </div>
+  </section>
+</Base>

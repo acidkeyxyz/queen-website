@@ -1,0 +1,38 @@
+{
+  "slug": "aviso-de-privacidad",
+  "title": "Aviso de privacidad",
+  "seoTitle": "Aviso de privacidad | YuriApp",
+  "seoDescription": "Aviso de privacidad del sitio de YuriApp: qué datos se recaban en este sitio, para qué se usan y cómo contactarnos.",
+  "noindex": false,
+  "blocks": [
+    {
+      "type": "prose",
+      "sections": [
+        {
+          "paragraphs": [
+            "REPLACE_ME: este texto es un borrador y debe revisarlo un abogado antes de publicar. Responsable del tratamiento de datos: REPLACE_ME (razón social y domicilio)."
+          ]
+        },
+        {
+          "title": "Qué datos recabamos en este sitio",
+          "paragraphs": [
+            "Este sitio es informativo. Si nos escribes por correo o WhatsApp, usamos tu mensaje y tus datos de contacto únicamente para responderte.",
+            "Si se activan herramientas de analítica, estas registran visitas de forma agregada. Confirma qué herramientas están activas antes de publicar este aviso."
+          ]
+        },
+        {
+          "title": "Tu cuenta en la aplicación",
+          "paragraphs": [
+            "El registro y el uso de la aplicación se realizan en el dominio de la aplicación, con sus propias condiciones. Los datos de tu taller y de tus clientes están aislados por empresa."
+          ]
+        },
+        {
+          "title": "Cómo ejercer tus derechos",
+          "paragraphs": [
+            "Para consultar, corregir o eliminar tus datos escribe a {email}."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+---
+import Icon from '@/components/Icon.astro';
+import SectionHead from './SectionHead.astro';
+import { business } from '@/lib/business';
+import { t } from '@/i18n';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'contact'>;
+  level?: 1 | 2;
+}
+const { block, level = 2 } = Astro.props;
+const Inner = level === 1 ? 'h2' : 'h3';
+const wa = business.waHref('Hola, quiero saber más de YuriApp para mi taller.');
+---
+<section class="section section--paper contact">
+  <div class="container">
+    <SectionHead title={block.title} lede={block.text} level={level} />
+    <ul class="contact__grid">
+      <li class="contact__card" data-reveal>
+        <Icon name="mail" size={26} />
+        <Inner>Correo</Inner>
+        <a href={`mailto:${business.email}`}>{business.email}</a>
+      </li>
+      <li class="contact__card" data-reveal style="--i:1">
+        <Icon name="chat" size={26} />
+        <Inner>Ventas</Inner>
+        <a href={business.appSales}>{t.cta.sales}</a>
+      </li>
+      {business.hasWhatsapp && (
+        <li class="contact__card" data-reveal style="--i:2">
+          <Icon name="whatsapp" size={26} />
+          <Inner>WhatsApp</Inner>
+          <a href={wa} target="_blank" rel="noopener">{t.cta.whatsapp}<span class="sr-only"> {t.a11y.newWindow}</span></a>
+        </li>
+      )}
+      {business.hasPhone && (
+        <li class="contact__card" data-reveal style="--i:3">
+          <Icon name="phone" size={26} />
+          <Inner>Teléfono</Inner>
+          <a href={business.telHref}>{business.phone}</a>
+        </li>
+      )}
+    </ul>
+  </div>
+</section>

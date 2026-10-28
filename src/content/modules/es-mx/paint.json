@@ -1,0 +1,74 @@
+{
+  "order": 5,
+  "slug": "pintura",
+  "icon": "paint",
+  "cardTitle": "Pintura",
+  "cardTagline": "Fórmulas, mezclas e insumos pesados",
+  "title": "Sabe cuánto material de pintura usa cada trabajo",
+  "lede": "Guarda fórmulas de pintura, proporciones de mezcla y los insumos pesados por trabajo: el costo del material se conoce, no se adivina.",
+  "seoTitle": "Control de pintura y fórmulas para talleres | YuriApp",
+  "seoDescription": "Registra fórmulas de pintura, proporciones de mezcla e insumos pesados por trabajo para conocer el costo real del material de cada reparación.",
+  "keywords": [
+    "fórmulas de pintura automotriz",
+    "control de insumos de pintura",
+    "costo de pintura por trabajo"
+  ],
+  "highlights": [
+    {
+      "title": "Fórmulas y proporciones",
+      "text": "Guarda cada fórmula con sus proporciones de mezcla para repetirla cuando haga falta."
+    },
+    {
+      "title": "Insumos pesados por trabajo",
+      "text": "Registra lo que se pesó para cada trabajo, en lugar de calcularlo de memoria."
+    },
+    {
+      "title": "Costo de material conocido",
+      "text": "Con lo pesado y el costo del insumo, sabes cuánto material consumió cada reparación."
+    }
+  ],
+  "idealFor": [
+    "Talleres de pintura",
+    "Dueños que quieren saber qué trabajos dejaron ganancia"
+  ],
+  "sample": {
+    "title": "Mezcla",
+    "rows": [
+      {
+        "label": "Fórmula",
+        "value": "Gris metálico",
+        "tone": "idle"
+      },
+      {
+        "label": "Proporción",
+        "value": "Según fórmula",
+        "tone": "info"
+      },
+      {
+        "label": "Insumos pesados",
+        "value": "Registrados",
+        "tone": "ok"
+      },
+      {
+        "label": "Costo de material",
+        "value": "Calculado",
+        "tone": "ok"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Qué se registra por trabajo?",
+      "a": "La fórmula usada, las proporciones de mezcla y los insumos pesados."
+    },
+    {
+      "q": "¿Para qué sirve registrar el peso?",
+      "a": "Para conocer el costo del material de cada trabajo y comparar contra lo que cobraste."
+    },
+    {
+      "q": "¿Funciona con mis proveedores?",
+      "a": "{brand} maneja proveedores e insumos, así que puedes llevar el control de lo que compras y usas."
+    }
+  ]
+}

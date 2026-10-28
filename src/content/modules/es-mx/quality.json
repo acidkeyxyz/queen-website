@@ -1,0 +1,74 @@
+{
+  "order": 6,
+  "slug": "calidad",
+  "icon": "shield",
+  "cardTitle": "Control de calidad",
+  "cardTagline": "Inspección antes de entregar",
+  "title": "Inspecciona el auto antes de entregarlo",
+  "lede": "Haz la inspección de calidad y revisa los puntos de seguridad antes de que el auto regrese con el cliente.",
+  "seoTitle": "Control de calidad en talleres de hojalatería y pintura | YuriApp",
+  "seoDescription": "Inspección de calidad y puntos de seguridad antes de entregar el auto al cliente: un paso más en el flujo de trabajo de tu taller.",
+  "keywords": [
+    "control de calidad taller",
+    "inspección antes de entrega",
+    "puntos de seguridad vehículo"
+  ],
+  "highlights": [
+    {
+      "title": "Inspección de calidad",
+      "text": "Un paso explícito antes de entregar, no una revisión que depende de la memoria."
+    },
+    {
+      "title": "Puntos de seguridad",
+      "text": "Revisa los puntos de seguridad del vehículo antes de que salga del taller."
+    },
+    {
+      "title": "Parte del flujo",
+      "text": "La inspección forma parte del recorrido del auto, entre el trabajo y el cobro."
+    }
+  ],
+  "idealFor": [
+    "Talleres que quieren menos reclamos al entregar",
+    "Equipos con un responsable de calidad"
+  ],
+  "sample": {
+    "title": "Inspección",
+    "rows": [
+      {
+        "label": "Acabado de pintura",
+        "value": "Revisado",
+        "tone": "ok"
+      },
+      {
+        "label": "Alineación de piezas",
+        "value": "Revisado",
+        "tone": "ok"
+      },
+      {
+        "label": "Puntos de seguridad",
+        "value": "Por revisar",
+        "tone": "warn"
+      },
+      {
+        "label": "Entrega",
+        "value": "Pendiente",
+        "tone": "idle"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Cuándo se hace la inspección?",
+      "a": "Antes de entregar el auto, como un paso del flujo de trabajo."
+    },
+    {
+      "q": "¿Qué incluye?",
+      "a": "Inspección de calidad y puntos de seguridad."
+    },
+    {
+      "q": "¿Queda registro?",
+      "a": "Sí. Queda en el expediente del vehículo, junto con el resto de la orden."
+    }
+  ]
+}

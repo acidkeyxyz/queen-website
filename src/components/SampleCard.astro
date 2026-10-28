@@ -1,0 +1,28 @@
+---
+import { t } from '@/i18n';
+import { fill } from '@/lib/text';
+
+import type { Sample } from '@/lib/types';
+
+interface Props {
+  sample: Sample;
+  class?: string;
+  [key: string]: unknown;
+}
+const { sample, class: className = '', ...rest } = Astro.props;
+---
+<figure class={`sample ${className}`} {...rest}>
+  <figcaption class="sample__head">
+    <span class="sample__title">{fill(sample.title)}</span>
+    {sample.badge && <span class="sample__badge">{sample.badge}</span>}
+  </figcaption>
+  <p class="sr-only">{t.a11y.sample}</p>
+  <ul class="sample__rows">
+    {sample.rows.map((row) => (
+      <li class="sample__row">
+        <span class="sample__label">{fill(row.label)}</span>
+        <span class={`pill pill--${row.tone}`}>{fill(row.value)}</span>
+      </li>
+    ))}
+  </ul>
+</figure>

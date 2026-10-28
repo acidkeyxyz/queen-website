@@ -1,0 +1,50 @@
+---
+import Icon from '@/components/Icon.astro';
+import { business } from '@/lib/business';
+import { site } from '@/lib/site';
+import { t } from '@/i18n';
+
+interface Props {
+  path: string;
+}
+const { path } = Astro.props;
+const links = site.pages
+  .filter((p) => p.data.nav)
+  .sort((a, b) => a.data.order - b.data.order)
+  .map((p) => ({ label: p.data.title, href: site.href.page(site.pageKey(p.id)) }));
+const isCurrent = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+---
+<header class="hdr" id="site-header">
+  <div class="container hdr__inner">
+    <a class="hdr__brand" href={site.href.home()} aria-label={`${business.name}, ${t.a11y.home}`}>
+      <img class="hdr__mark" src="/brand/icon-96.png" width="40" height="40" alt="" />
+      <span class="hdr__name">{business.name}</span>
+    </a>
+    <nav class="hdr__nav" aria-label="Principal">
+      <ul>
+        {links.map((l) => (
+          <li><a href={l.href} aria-current={isCurrent(l.href) ? 'page' : undefined}>{l.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <div class="hdr__actions">
+      <a class="hdr__login" href={business.appLogin}>{t.nav.login}</a>
+      <a class="btn btn--primary btn--sm" href={business.appSignup}>{t.cta.signup}</a>
+    </div>
+    <details class="hdr__mobile">
+      <summary aria-label={t.nav.menu}>
+        <Icon name="menu" class="hdr__open" />
+        <Icon name="close" class="hdr__close" />
+      </summary>
+      <nav class="hdr__panel" aria-label="Principal, móvil">
+        <ul>
+          {links.map((l) => (
+            <li><a href={l.href} aria-current={isCurrent(l.href) ? 'page' : undefined}>{l.label}</a></li>
+          ))}
+          <li><a href={business.appLogin}>{t.nav.login}</a></li>
+        </ul>
+        <a class="btn btn--primary btn--block" href={business.appSignup}>{t.cta.signup}</a>
+      </nav>
+    </details>
+  </div>
+</header>

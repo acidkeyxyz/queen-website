@@ -1,0 +1,38 @@
+---
+import Icon from '@/components/Icon.astro';
+import SectionHead from './SectionHead.astro';
+import { site } from '@/lib/site';
+import { t } from '@/i18n';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'modules'>;
+  level?: 1 | 2;
+}
+const { block, level = 2 } = Astro.props;
+const Inner = level === 1 ? 'h2' : 'h3';
+const list = block.showAll ? site.modules : site.modules.slice(0, 6);
+---
+<section class="section section--paper modules">
+  <div class="container">
+    <SectionHead title={block.title} lede={block.lede} level={level} />
+    <ul class="cards">
+      {list.map((m, i) => (
+        <li class="card" data-reveal style={`--i:${i % 3}`}>
+          <span class="card__icon"><Icon name={m.data.icon} size={26} /></span>
+          <Inner class="card__title">
+            <a class="card__link" href={site.href.moduleEntry(m.data.slug)}>{m.data.cardTitle}</a>
+          </Inner>
+          <p class="card__text">{m.data.cardTagline}</p>
+          <span class="card__more" aria-hidden="true"><Icon name="arrow" size={18} /></span>
+        </li>
+      ))}
+    </ul>
+    {!block.showAll && (
+      <p class="section__more">
+        <a class="btn btn--outline" href={site.href.page('modules')}>{t.cta.allModules}</a>
+      </p>
+    )}
+  </div>
+</section>

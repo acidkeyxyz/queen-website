@@ -1,0 +1,17 @@
+---
+import Base from '@/layouts/Base.astro';
+import { buildGraph } from '@/lib/schema';
+import { business } from '@/lib/business';
+import { t } from '@/i18n';
+
+const graph = buildGraph({ path: '/404/', title: t.notFound.title, description: t.notFound.text, crumbs: [] });
+---
+<Base title={`${t.notFound.title} | ${business.name}`} description="La página que buscas no existe o cambió de dirección. Vuelve al inicio de YuriApp." path="/404/" graph={graph} noindex>
+  <section class="section">
+    <div class="container container--narrow notfound">
+      <h1 class="section__title">{t.notFound.title}</h1>
+      <p class="section__lede">{t.notFound.text}</p>
+      <p><a class="btn btn--primary" href="/">{t.a11y.home}</a></p>
+    </div>
+  </section>
+</Base>

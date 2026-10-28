@@ -1,0 +1,28 @@
+{
+  "name": "YuriApp",
+  "legalName": "REPLACE_ME",
+  "url": "https://yuriapp.example",
+  "appUrl": "https://yuriapp.queentires.com.mx",
+  "founded": 2021,
+  "tagline": "El sistema de tu taller de hojalatería, pintura y llantas",
+  "email": "lmendoza.escom@gmail.com",
+  "phone": "REPLACE_ME",
+  "whatsapp": "REPLACE_ME",
+  "address": "REPLACE_ME",
+  "areaServed": "MX",
+  "social": [],
+  "analytics": {
+    "gtm": "",
+    "ga4": ""
+  },
+  "stats": {
+    "clientsRecorded": 1900,
+    "anchorCustomer": "Queen Tires"
+  },
+  "currency": "MXN",
+  "developer": {
+    "name": "acidkey.xyz",
+    "company": "Acidkey Software Solutions",
+    "url": "https://acidkey.xyz"
+  }
+}

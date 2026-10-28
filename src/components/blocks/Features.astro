@@ -1,0 +1,28 @@
+---
+import Icon from '@/components/Icon.astro';
+import SectionHead from './SectionHead.astro';
+import { fill } from '@/lib/text';
+
+import type { BlockOf } from '@/lib/types';
+
+interface Props {
+  block: BlockOf<'features'>;
+  level?: 1 | 2;
+}
+const { block, level = 2 } = Astro.props;
+const Inner = level === 1 ? 'h2' : 'h3';
+---
+<section class="section features">
+  <div class="container">
+    <SectionHead title={block.title} lede={block.lede} level={level} />
+    <ul class="features__grid">
+      {block.items.map((item, i: number) => (
+        <li class="feature" data-reveal="scale" style={`--i:${i % 3}`}>
+          <span class="feature__icon"><Icon name={item.icon} size={26} /></span>
+          <Inner>{fill(item.title)}</Inner>
+          <p>{fill(item.text)}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

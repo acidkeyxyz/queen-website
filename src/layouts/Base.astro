@@ -1,0 +1,46 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource-variable/manrope';
+import '@/styles/global.css';
+import Head from '@/components/seo/Head.astro';
+import Analytics from '@/components/seo/Analytics.astro';
+import AnalyticsNoscript from '@/components/seo/AnalyticsNoscript.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import ContactDock from '@/components/layout/ContactDock.astro';
+import ScrollFx from '@/components/layout/ScrollFx.astro';
+import { t } from '@/i18n';
+import { defaultLocale } from '@/i18n/locales';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  graph: object;
+  noindex?: boolean;
+}
+const { title, description, path, graph, noindex } = Astro.props;
+---
+<!doctype html>
+<html lang={defaultLocale.htmlLang}>
+  <head>
+    <script is:inline>
+      document.documentElement.classList.add('js');
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('fx');
+    </script>
+    <Head title={title} description={description} path={path} graph={graph} noindex={noindex} />
+    <Analytics />
+  </head>
+  <body>
+    <AnalyticsNoscript />
+    <a class="skip" href="#main">{t.a11y.skip}</a>
+    <div class="progress" aria-hidden="true"></div>
+    <Header path={path} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <ContactDock />
+    <ScrollFx />
+  </body>
+</html>
