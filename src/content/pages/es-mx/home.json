@@ -2,14 +2,14 @@
   "slug": "",
   "view": "home",
   "title": "Inicio",
-  "seoTitle": "YuriApp: sistema para talleres de hojalatería y pintura",
+  "seoTitle": "YuriApp: el ERP para talleres automotrices",
   "seoDescription": "YuriApp reúne presupuestos, recepción en 3D, órdenes de trabajo, pintura, calidad y cobros en un solo sistema para talleres y llanteras en México.",
   "blocks": [
     {
       "type": "hero",
-      "eyebrow": "Sistema para talleres de hojalatería, pintura y llantas",
-      "title": "Cada auto del taller, del presupuesto a la entrega, en un solo lugar",
-      "lede": "{brand} reúne presupuestos, recepción en 3D, órdenes de trabajo, pintura, control de calidad y cobros. Funciona en el celular, dentro del taller.",
+      "eyebrow": "El ERP de tu taller automotriz",
+      "title": "El manejo de tu taller al alcance de tu mano",
+      "lede": "{brand} controla Empleados, Tareas, Gastos, Presupuestos, status y entregas en un solo lugar.",
       "primary": {
         "label": "Crear cuenta gratis",
         "href": "app:signup"
