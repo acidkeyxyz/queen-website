@@ -63,7 +63,7 @@ Revert the last commit in `queen-website-dist` (`git revert HEAD && git push ori
 - Never edit files in `queen-website-dist` by hand; the next release overwrites them.
 - `og-default.jpg` and `public/brand/*` come from `pnpm brand:assets`; run it and commit the output in `queen-website` before building if the logo changed.
 - `business.json` -> `url` drives every canonical URL, the sitemap and `robots.txt`. It is `https://www.queentires.com.mx` while the site is still reachable on the default `*.ondigitalocean.app` URL, so that URL is a duplicate that points its canonical at the real domain.
-- The custom domain is **not attached yet**. `queentires.com.mx` is a DigitalOcean DNS zone and `www.queentires.com.mx` currently resolves to something else, so attaching it is a deliberate DNS change: add the domain to the app (Settings -> Domains), then create or edit the `www` record it asks for. Do this only when you are ready to replace what `www` serves today.
+- **Custom domain:** `www.queentires.com.mx` is registered on the app as its primary domain, but it only goes live once DNS points at the app. The authoritative nameservers for `queentires.com.mx` are IONOS (`ns*.ui-dns.*`), **not** DigitalOcean; the zone in the DigitalOcean account is unused, so DigitalOcean cannot create the record itself. At IONOS: delete the existing `www` A/AAAA records (today they serve an IONOS parking page) and add `CNAME www -> queen-website-7dmav.ondigitalocean.app`. Then wait for the domain phase to become `ACTIVE` (app `domains[].phase` in the API) and for the certificate to issue. The apex `queentires.com.mx` is untouched; if it should land on the site, add an IONOS redirect to `https://www.queentires.com.mx`. Email (MX to GoDaddy) and `yuriapp.`/`storage.` records must not be changed.
 - No build runs on DigitalOcean, so the pnpm version and the 24h release-age policy that affect `queen-webapp` do not apply here; they only matter on your machine.
 
 ## Launch checklist
@@ -74,7 +74,8 @@ Revert the last commit in `queen-website-dist` (`git revert HEAD && git push ori
 - [ ] Replace the illustrative "Ejemplo" cards with real product screenshots (taken in demo mode, `?demo=true`).
 - [ ] Re-run `pnpm brand:assets` if the logo changes.
 - [x] Hosting: DigitalOcean static site deploying from `queen-website-dist` (see Deployment).
-- [ ] Attach `www.queentires.com.mx` to the app and update DNS (see Deployment, gotchas).
+- [x] `www.queentires.com.mx` registered on the DigitalOcean app.
+- [ ] At IONOS: replace the `www` A/AAAA records with `CNAME www -> queen-website-7dmav.ondigitalocean.app`, then confirm the domain phase is `ACTIVE` (see Deployment, gotchas).
 - [ ] After deploy: confirm the deployment reached ACTIVE, run Lighthouse, submit `sitemap-index.xml` to Search Console.
 
 ## Quality status (2026-10-27)
