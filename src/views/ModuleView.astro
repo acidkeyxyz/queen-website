@@ -28,7 +28,7 @@ const next = site.modules[(index + 1) % site.modules.length];
 const faqs = m.faqs.map((f) => ({ q: fill(f.q), a: fill(f.a) }));
 const graph = buildGraph({ path, title: m.seoTitle, description: m.seoDescription, crumbs, faqs });
 ---
-<Base title={m.seoTitle} description={m.seoDescription} path={path} graph={graph}>
+<Base title={m.seoTitle} description={m.seoDescription} path={path} graph={graph} image={`/og/funciones-${m.slug}.jpg`}>
   <div class="container"><Breadcrumbs crumbs={crumbs} /></div>
   <section class="module-hero">
     <div class="container module-hero__grid">

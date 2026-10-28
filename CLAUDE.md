@@ -40,6 +40,16 @@ Researched options: ScrollMagic is effectively superseded (GreenSock recommends 
 - `VideoDemo.astro` is used by the `demo` block (home) and by `video` in a module JSON (`checkin`). WebM is listed first, MP4 is the Safari fallback; `preload="none"` plus a poster keeps it out of the LCP.
 - Autoplay only while at least 50% visible and never under `prefers-reduced-motion`; the visible pause/play button is required (WCAG 2.2.2 for motion over 5 s). Without JS the native `controls` stay on. The text `description` is the text alternative and is schema-enforced (40+ characters).
 
+## Share previews (WhatsApp, Facebook, LinkedIn, X)
+- `Head.astro` emits the full Open Graph and Twitter set per page (title, description, url, site name, locale, image with `secure_url`, type, size and alt). The 70-160 character description is schema-enforced.
+- Every page has its own 1200x630 image: `public/og/<slug>.jpg` for pages, `public/og/funciones-<slug>.jpg` for modules, `public/og-default.jpg` for the home and the 404. `pnpm brand:assets` generates them from the content JSON (page title + "YuriApp" + the ERP line; module `cardTitle` + `cardTagline`), so a new page or module gets one automatically. Commit the output.
+- The generator throws if text does not fit (24 characters per line: title 3 lines, tagline 3, caption 2). Shorten the copy rather than loosening the limit. Keep each image under 300 KB (they are 33-44 KB).
+- Image URLs are absolute and built from `business.json` -> `url`. Until that domain serves the site, a link shared from the default `*.ondigitalocean.app` address previews without an image. WhatsApp caches previews; refresh with the Facebook Sharing Debugger after a change.
+- `views/PageView.astro` and `views/ModuleView.astro` pass the image path to `Base.astro`; do not hand-write image URLs elsewhere.
+
+## Hero copy
+Eyebrow "El ERP de tu taller automotriz", headline "El manejo de tu taller al alcance de tu mano", paragraph "{brand} controla Empleados, Tareas, Gastos, Presupuestos, status y entregas en un solo lugar." (home.json hero block). Do not claim "el primer ERP" unless it is verified: it is an unverifiable superlative on a public page. The footer tagline in `business.json` echoes the eyebrow.
+
 ## Design tokens (sampled from the logo, `src/assets/brand/yuriapp-logo-master.png`)
 | Token | Value | Use |
 |---|---|---|
@@ -60,7 +70,7 @@ Two typefaces: Manrope Variable (display), Inter Variable (text). Boldness is sp
 - Headings: when a section is the page's h1, its inner card headings are h2 (`Inner` in each block). Keep this or Lighthouse flags heading order.
 
 ## Commands
-`pnpm dev` · `pnpm build` (runs `astro check` first) · `pnpm preview` · `pnpm brand:assets` (regenerates icons and `og-default.jpg` from the logo master; commit the output).
+`pnpm dev` · `pnpm build` (runs `astro check` first) · `pnpm preview` · `pnpm brand:assets` (regenerates icons, `og-default.jpg` and every `public/og/*.jpg` from the logo master and the content; commit the output) · `pnpm video:encode`.
 
 ## Maintainer preferences
 English for docs and commits, Spanish only for user-visible copy. One feature per PR. Status updates as a table for Developers / PMs / Non-technical / C-level.

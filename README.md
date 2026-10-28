@@ -61,7 +61,8 @@ Revert the last commit in `queen-website-dist` (`git revert HEAD && git push ori
 
 ### Gotchas
 - Never edit files in `queen-website-dist` by hand; the next release overwrites them.
-- `og-default.jpg` and `public/brand/*` come from `pnpm brand:assets`; run it and commit the output in `queen-website` before building if the logo changed.
+- `og-default.jpg`, `public/og/*` and `public/brand/*` come from `pnpm brand:assets`; run it and commit the output in `queen-website` before building if the logo changed or you added/renamed a page or function.
+- Share-preview images are referenced with `business.json` -> `url`. Until `www.queentires.com.mx` points at the app, links shared from the default `*.ondigitalocean.app` URL preview without an image.
 - `business.json` -> `url` drives every canonical URL, the sitemap and `robots.txt`. It is `https://www.queentires.com.mx` while the site is still reachable on the default `*.ondigitalocean.app` URL, so that URL is a duplicate that points its canonical at the real domain.
 - **Custom domain:** `www.queentires.com.mx` is registered on the app as its primary domain, but it only goes live once DNS points at the app. The authoritative nameservers for `queentires.com.mx` are IONOS (`ns*.ui-dns.*`), **not** DigitalOcean; the zone in the DigitalOcean account is unused, so DigitalOcean cannot create the record itself. At IONOS: delete the existing `www` A/AAAA records (today they serve an IONOS parking page) and add `CNAME www -> queen-website-7dmav.ondigitalocean.app`. Then wait for the domain phase to become `ACTIVE` (app `domains[].phase` in the API) and for the certificate to issue. The apex `queentires.com.mx` is untouched; if it should land on the site, add an IONOS redirect to `https://www.queentires.com.mx`. Email (MX to GoDaddy) and `yuriapp.`/`storage.` records must not be changed.
 - No build runs on DigitalOcean, so the pnpm version and the 24h release-age policy that affect `queen-webapp` do not apply here; they only matter on your machine.
@@ -79,6 +80,6 @@ Revert the last commit in `queen-website-dist` (`git revert HEAD && git push ori
 - [ ] After deploy: confirm the deployment reached ACTIVE, run Lighthouse, submit `sitemap-index.xml` to Search Console.
 
 ## Quality status (2026-10-27)
-Lighthouse mobile/desktop on every page type: Performance 98-100, Accessibility 100, Best Practices 100, SEO 100. Firefox fallback verified.
+Lighthouse mobile/desktop on every page type: Performance 98-100 (95 measured on the live site), Accessibility 100, Best Practices 100, SEO 100. Firefox fallback verified. All 15 pages carry complete share metadata with a 1200x630 image under 300 KB.
 
 Contact: Luis Mendoza, lmendoza.escom@gmail.com

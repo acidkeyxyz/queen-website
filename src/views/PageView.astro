@@ -18,7 +18,7 @@ const crumbs = isHome ? [{ name: t.a11y.home, path: '/' }] : [{ name: t.a11y.hom
 const faqs = page.blocks.flatMap((b) => (b.type === 'faq' ? b.items.map((i) => ({ q: fill(i.q), a: fill(i.a) })) : []));
 const graph = buildGraph({ path, title: page.seoTitle, description: page.seoDescription, crumbs, faqs });
 ---
-<Base title={page.seoTitle} description={page.seoDescription} path={path} graph={graph} noindex={page.noindex}>
+<Base title={page.seoTitle} description={page.seoDescription} path={path} graph={graph} noindex={page.noindex} image={isHome ? undefined : `/og/${page.slug}.jpg`}>
   {!isHome && <div class="container"><Breadcrumbs crumbs={crumbs} /></div>}
   <BlockList blocks={page.blocks} pageTitle={page.title} firstIsH1={!isHome} />
 </Base>

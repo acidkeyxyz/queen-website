@@ -18,8 +18,9 @@ interface Props {
   path: string;
   graph: object;
   noindex?: boolean;
+  image?: string;
 }
-const { title, description, path, graph, noindex } = Astro.props;
+const { title, description, path, graph, noindex, image } = Astro.props;
 ---
 <!doctype html>
 <html lang={defaultLocale.htmlLang}>
@@ -28,7 +29,7 @@ const { title, description, path, graph, noindex } = Astro.props;
       document.documentElement.classList.add('js');
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('fx');
     </script>
-    <Head title={title} description={description} path={path} graph={graph} noindex={noindex} />
+    <Head title={title} description={description} path={path} graph={graph} noindex={noindex} image={image} />
     <Analytics />
   </head>
   <body>
