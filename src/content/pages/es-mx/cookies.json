@@ -1,0 +1,44 @@
+{
+  "slug": "politica-de-cookies",
+  "title": "Política de cookies",
+  "seoTitle": "Política de cookies | YuriApp",
+  "seoDescription": "Qué cookies usa el sitio de YuriApp, para qué sirven, cuánto duran y cómo aceptarlas, rechazarlas o cambiar tu elección en cualquier momento.",
+  "noindex": false,
+  "blocks": [
+    {
+      "type": "prose",
+      "sections": [
+        {
+          "title": "Qué son",
+          "paragraphs": [
+            "Son archivos pequeños que se guardan en tu navegador. Algunas son necesarias para que el sitio funcione. Otras miden el uso o la publicidad y solo se activan si las aceptas."
+          ]
+        },
+        {
+          "title": "Necesarias",
+          "paragraphs": [
+            "Guardan tu elección de cookies (cookie_consent, propia, 12 meses). No requieren consentimiento."
+          ]
+        },
+        {
+          "title": "Analítica",
+          "paragraphs": [
+            "Google Analytics (_ga, _ga_*, de Google, hasta 2 años) mide visitas de forma estadística. Solo con tu consentimiento."
+          ]
+        },
+        {
+          "title": "Publicidad",
+          "paragraphs": [
+            "Meta Pixel (_fbp, de Meta, hasta 3 meses) nos ayuda a medir y mejorar anuncios. Solo con tu consentimiento."
+          ]
+        },
+        {
+          "title": "Cómo cambiar tu elección",
+          "paragraphs": [
+            "Usa el enlace Configurar cookies en el pie de página. También puedes borrar las cookies en tu navegador. La aplicación de {brand} no usa cookies de publicidad."
+          ]
+        }
+      ]
+    }
+  ]
+}

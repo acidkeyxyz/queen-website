@@ -1,0 +1,23 @@
+{
+  "slug": "aviso-simplificado",
+  "title": "Aviso de privacidad simplificado",
+  "seoTitle": "Aviso de privacidad simplificado | YuriApp",
+  "seoDescription": "Versión corta del aviso de privacidad de YuriApp: quién trata tus datos, para qué y dónde consultar el aviso integral y ejercer tus derechos.",
+  "noindex": false,
+  "blocks": [
+    {
+      "type": "prose",
+      "sections": [
+        {
+          "title": "Aviso simplificado",
+          "paragraphs": [
+            "Responsable: {legalName}.",
+            "Usamos tus datos para responderte, crear tu cuenta, darte el servicio y cobrar. Con tu consentimiento también para analítica y mensajes comerciales de {brand}.",
+            "Compartimos datos con proveedores que nos ayudan a operar, como Stripe, Google y DigitalOcean, algunos fuera de México.",
+            "Para saber más o ejercer tus derechos ARCO escribe a {email} o consulta el Aviso de privacidad integral en /aviso-de-privacidad/."
+          ]
+        }
+      ]
+    }
+  ]
+}

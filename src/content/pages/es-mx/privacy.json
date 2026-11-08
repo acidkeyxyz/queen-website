@@ -1,35 +1,82 @@
 {
   "slug": "aviso-de-privacidad",
   "title": "Aviso de privacidad",
-  "seoTitle": "Aviso de privacidad | YuriApp",
-  "seoDescription": "Aviso de privacidad del sitio de YuriApp: qué datos se recaban en este sitio, para qué se usan y cómo contactarnos.",
+  "seoTitle": "Aviso de privacidad integral | YuriApp",
+  "seoDescription": "Aviso de privacidad integral de YuriApp conforme a la LFPDPPP: qué datos recabamos, para qué, con quién los compartimos y cómo ejercer tus derechos ARCO.",
   "noindex": false,
   "blocks": [
     {
       "type": "prose",
       "sections": [
         {
+          "title": "Responsable de tus datos",
           "paragraphs": [
-            "REPLACE_ME: este texto es un borrador y debe revisarlo un abogado antes de publicar. Responsable del tratamiento de datos: REPLACE_ME (razón social y domicilio)."
+            "Responsable: {legalName}, con domicilio en {address}. Para cualquier duda sobre tus datos escribe a {email}.",
+            "Fecha de última actualización: 7 de noviembre de 2026."
           ]
         },
         {
-          "title": "Qué datos recabamos en este sitio",
+          "title": "Dos papeles distintos",
           "paragraphs": [
-            "Este sitio es informativo. Si nos escribes por correo o WhatsApp, usamos tu mensaje y tus datos de contacto únicamente para responderte.",
-            "Si se activan herramientas de analítica, estas registran visitas de forma agregada. Confirma qué herramientas están activas antes de publicar este aviso."
+            "Somos responsables de los datos de los dueños y el personal de los talleres que usan {brand}, de quienes nos escriben y de quienes visitan este sitio.",
+            "Somos encargados de los datos de los clientes y de los vehículos que cada taller captura en la aplicación. El taller es el responsable de esos datos y debe tener su propio aviso de privacidad para sus clientes. Nosotros solo los tratamos por instrucción del taller, para prestarle el servicio."
           ]
         },
         {
-          "title": "Tu cuenta en la aplicación",
+          "title": "Datos personales que recabamos",
           "paragraphs": [
-            "El registro y el uso de la aplicación se realizan en el dominio de la aplicación, con sus propias condiciones. Los datos de tu taller y de tus clientes están aislados por empresa."
+            "Visitantes del sitio: dirección IP, tipo de dispositivo y navegador, y páginas visitadas, solo si aceptas las cookies de analítica o publicidad.",
+            "Contacto y ventas: nombre, correo electrónico, teléfono móvil, nombre del taller, número estimado de usuarios, tu mensaje y la dirección IP desde la que enviaste el formulario.",
+            "Registro: correo electrónico, nombre del dueño, nombre del taller y dirección IP. Si entras con Google, recibimos tu nombre y correo de tu cuenta de Google.",
+            "Usuarios del taller: nombre, usuario, correo, puesto, especialidades y, cuando el taller los captura, sueldo. Si vinculas Telegram, guardamos tu identificador y nombre de Telegram, y los audios y textos que envías para crear presupuestos.",
+            "Clientes del taller (como encargados): nombre, teléfono, correo, datos del vehículo (marca, modelo, año, color, placas, VIN, kilometraje), inspecciones, fotografías de recepción, presupuestos y pagos.",
+            "Cobro de suscripciones: Stripe procesa tu tarjeta. Nosotros no guardamos el número de tarjeta; solo identificadores de cliente y suscripción.",
+            "Datos financieros o patrimoniales: el sueldo de usuarios y los pagos que el taller registra. No recabamos datos personales sensibles."
           ]
         },
         {
-          "title": "Cómo ejercer tus derechos",
+          "title": "Para qué los usamos",
           "paragraphs": [
-            "Para consultar, corregir o eliminar tus datos escribe a {email}."
+            "Finalidades necesarias: crear y administrar tu cuenta, prestar el servicio, cobrar la suscripción, dar soporte, responder tus mensajes, prevenir abusos y cumplir obligaciones legales.",
+            "Finalidades que requieren tu consentimiento: medir el uso del sitio (Google Analytics), medir y mejorar nuestra publicidad (Meta) y enviarte información comercial de {brand}.",
+            "Si no quieres las finalidades que requieren consentimiento, no marques las casillas ni aceptes las cookies. Esto no afecta el servicio. Puedes retirar tu consentimiento en cualquier momento escribiendo a {email}."
+          ]
+        },
+        {
+          "title": "Con quién compartimos datos",
+          "paragraphs": [
+            "Solo con proveedores que nos ayudan a operar y que tratan los datos por nuestra cuenta: Stripe (cobros), Google (inicio de sesión y analítica), Meta (publicidad, solo con tu consentimiento), DigitalOcean (alojamiento), Telegram (si usas el bot) y nuestro proveedor de correo.",
+            "Algunos están fuera de México, por lo que tus datos pueden transferirse al extranjero. No vendemos tus datos. Compartiremos datos con autoridades solo cuando la ley lo exija."
+          ]
+        },
+        {
+          "title": "Cuánto tiempo los conservamos",
+          "paragraphs": [
+            "Mientras tu cuenta esté activa. Al cancelarla, los borramos o anonimizamos salvo lo que la ley nos obligue a guardar, como registros de cobro por cinco años. Los datos de prospectos sin respuesta se eliminan después de un periodo razonable y la dirección IP de formularios se elimina a los 90 días."
+          ]
+        },
+        {
+          "title": "Tus derechos ARCO",
+          "paragraphs": [
+            "Puedes Acceder, Rectificar, Cancelar u Oponerte al tratamiento de tus datos, y revocar tu consentimiento o limitar su uso. Escribe a {email}. El procedimiento está en la página de Derechos ARCO. Si eres cliente de un taller, escríbele primero al taller, que es el responsable de tus datos."
+          ]
+        },
+        {
+          "title": "Cookies",
+          "paragraphs": [
+            "Usamos cookies necesarias y, solo con tu consentimiento, de analítica y publicidad. Consulta la Política de Cookies. Puedes cambiar tu elección en cualquier momento desde el enlace Configurar cookies del pie de página."
+          ]
+        },
+        {
+          "title": "Cambios a este aviso",
+          "paragraphs": [
+            "Publicaremos cualquier cambio en esta página con su nueva fecha. Si el cambio altera las finalidades, te lo avisaremos por correo."
+          ]
+        },
+        {
+          "title": "Autoridad",
+          "paragraphs": [
+            "Si crees que se vulneró tu derecho a la protección de datos, puedes acudir a la Secretaría Anticorrupción y Buen Gobierno, autoridad en materia de protección de datos personales en posesión de particulares."
           ]
         }
       ]

@@ -1,0 +1,80 @@
+{
+  "slug": "terminos-y-condiciones",
+  "title": "Términos y condiciones",
+  "seoTitle": "Términos y condiciones del servicio | YuriApp",
+  "seoDescription": "Términos y condiciones del servicio de YuriApp: cuentas, planes, uso aceptable, datos de tu taller, pagos, responsabilidad y ley aplicable en México.",
+  "noindex": false,
+  "blocks": [
+    {
+      "type": "prose",
+      "sections": [
+        {
+          "title": "Quién presta el servicio",
+          "paragraphs": [
+            "Responsable: {legalName}, con domicilio en {address}. Contacto: {email}. Al crear una cuenta o usar {brand} aceptas estos términos."
+          ]
+        },
+        {
+          "title": "El servicio",
+          "paragraphs": [
+            "{brand} es una aplicación web para administrar talleres automotrices: órdenes, presupuestos, tareas, cobros y más. Las funciones y planes vigentes se muestran en la página de precios."
+          ]
+        },
+        {
+          "title": "Cuenta y usuarios",
+          "paragraphs": [
+            "Debes dar datos verdaderos y cuidar tu contraseña. Cada usuario que compras o activas cuenta como un asiento. El dueño de la cuenta responde por lo que hagan sus usuarios."
+          ]
+        },
+        {
+          "title": "Planes y pagos",
+          "paragraphs": [
+            "Los precios están en pesos mexicanos e indicados en la página de precios. El plan de pago se cobra cada mes por usuario mediante Stripe. Las condiciones de cancelación y reembolso están en la Política de reembolsos."
+          ]
+        },
+        {
+          "title": "Uso aceptable",
+          "paragraphs": [
+            "No uses el servicio para actividades ilegales, para vulnerar la seguridad, para acceder a datos de otros talleres, ni para enviar contenido que no tengas derecho a usar."
+          ]
+        },
+        {
+          "title": "Tus datos",
+          "paragraphs": [
+            "Los datos que tu taller captura son de tu taller. Nosotros los tratamos solo para prestarte el servicio, como encargados. Tú eres responsable de contar con un aviso de privacidad para tus clientes y con su consentimiento cuando se requiera. Puedes pedirnos tus datos o su eliminación al cancelar."
+          ]
+        },
+        {
+          "title": "Disponibilidad",
+          "paragraphs": [
+            "Hacemos esfuerzos razonables para que el servicio esté disponible, pero no prometemos que funcione sin interrupciones ni errores. Podemos hacer mantenimiento."
+          ]
+        },
+        {
+          "title": "Responsabilidad",
+          "paragraphs": [
+            "En la medida que permita la ley, nuestra responsabilidad se limita a lo que pagaste en los últimos tres meses. Esto no limita derechos que la ley te da como consumidor."
+          ]
+        },
+        {
+          "title": "Suspensión",
+          "paragraphs": [
+            "Podemos suspender cuentas por uso indebido o falta de pago, avisándote cuando sea posible."
+          ]
+        },
+        {
+          "title": "Cambios",
+          "paragraphs": [
+            "Podemos actualizar estos términos. Los cambios importantes se avisan por correo o en la aplicación."
+          ]
+        },
+        {
+          "title": "Ley aplicable",
+          "paragraphs": [
+            "Estos términos se rigen por las leyes de México. Para controversias, las partes se someten a los tribunales competentes de la Ciudad de México, sin perjuicio de acudir a la PROFECO."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -217,8 +217,8 @@
         },
         {
           "icon": "shield",
-          "title": "Seguro para presentarlo",
-          "text": "El modo demo oculta todos los datos reales, así se puede mostrar en vivo sin exponer a ningún cliente."
+          "title": "Modo demo",
+          "text": "El modo demo oculta todos los datos reales, así se puede mostrar en vivo sin mostrar datos de tus clientes."
         }
       ]
     },
