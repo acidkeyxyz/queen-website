@@ -12,7 +12,7 @@
           "title": "Aviso simplificado",
           "paragraphs": [
             "Responsable: {legalName}.",
-            "Usamos tus datos para responderte, crear tu cuenta, darte el servicio y cobrar. Con tu consentimiento también para analítica y mensajes comerciales de {brand}.",
+            "Usamos tus datos para responderte, crear tu cuenta, darte el servicio y cobrar. Con tu consentimiento también para analítica y para enviarte mensajes comerciales de {brand} por correo, teléfono o WhatsApp, y usar tu correo o teléfono en anuncios de Meta.",
             "Compartimos datos con proveedores que nos ayudan a operar, como Stripe, Google y DigitalOcean, algunos fuera de México.",
             "Para saber más o ejercer tus derechos ARCO escribe a {email} o consulta el Aviso de privacidad integral en /aviso-de-privacidad/."
           ]
