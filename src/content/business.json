@@ -13,7 +13,8 @@
   "social": [],
   "analytics": {
     "gtm": "",
-    "ga4": ""
+    "ga4": "",
+    "metaPixel": ""
   },
   "stats": {
     "clientsRecorded": 1900,

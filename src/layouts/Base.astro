@@ -4,7 +4,7 @@ import '@fontsource-variable/manrope';
 import '@/styles/global.css';
 import Head from '@/components/seo/Head.astro';
 import Analytics from '@/components/seo/Analytics.astro';
-import AnalyticsNoscript from '@/components/seo/AnalyticsNoscript.astro';
+import ConsentBanner from '@/components/seo/ConsentBanner.astro';
 import Header from '@/components/layout/Header.astro';
 import Footer from '@/components/layout/Footer.astro';
 import ContactDock from '@/components/layout/ContactDock.astro';
@@ -33,7 +33,6 @@ const { title, description, path, graph, noindex, image } = Astro.props;
     <Analytics />
   </head>
   <body>
-    <AnalyticsNoscript />
     <a class="skip" href="#main">{t.a11y.skip}</a>
     <div class="progress" aria-hidden="true"></div>
     <Header path={path} />
@@ -43,5 +42,6 @@ const { title, description, path, graph, noindex, image } = Astro.props;
     <Footer />
     <ContactDock />
     <ScrollFx />
+    <ConsentBanner />
   </body>
 </html>
