@@ -1,0 +1,44 @@
+{
+  "slug": "politica-de-reembolsos",
+  "title": "Política de reembolsos",
+  "seoTitle": "Política de reembolsos y cancelación | YuriApp",
+  "seoDescription": "Cómo cancelar tu plan de YuriApp y cuándo procede un reembolso: sin reembolso de meses usados, salvo cobros duplicados o erróneos.",
+  "noindex": false,
+  "blocks": [
+    {
+      "type": "prose",
+      "sections": [
+        {
+          "title": "Plan Gratis",
+          "paragraphs": [
+            "No tiene costo ni cobros, así que no hay reembolsos."
+          ]
+        },
+        {
+          "title": "Cancelar",
+          "paragraphs": [
+            "Puedes cancelar tu plan de pago en cualquier momento desde tu cuenta o escribiendo a {email}. Conservas el acceso hasta el final del periodo ya pagado. No se hacen cobros posteriores."
+          ]
+        },
+        {
+          "title": "Reembolsos",
+          "paragraphs": [
+            "No reembolsamos los meses ya iniciados ni los usuarios que ya usaste. Sí reembolsamos cobros duplicados, cobros hechos por error o cobros posteriores a una cancelación solicitada a tiempo."
+          ]
+        },
+        {
+          "title": "Cómo pedirlo",
+          "paragraphs": [
+            "Escribe a {email} dentro de los 30 días siguientes al cobro, con tu correo de cuenta y el comprobante. Respondemos en 5 días hábiles. Stripe puede tardar varios días hábiles en reflejar el reembolso en tu tarjeta."
+          ]
+        },
+        {
+          "title": "Tus derechos como consumidor",
+          "paragraphs": [
+            "Esta política no limita los derechos que te da la Ley Federal de Protección al Consumidor. Puedes acudir a la PROFECO."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "derechos-arco",
+  "title": "Derechos ARCO",
+  "seoTitle": "Derechos ARCO: acceso, rectificación, cancelación | YuriApp",
+  "seoDescription": "Cómo ejercer tus derechos de acceso, rectificación, cancelación y oposición sobre tus datos personales en YuriApp, y a quién escribir si tienes dudas.",
+  "noindex": false,
+  "blocks": [
+    {
+      "type": "prose",
+      "sections": [
+        {
+          "title": "Qué puedes pedir",
+          "paragraphs": [
+            "Acceso: saber qué datos tuyos tratamos. Rectificación: corregirlos. Cancelación: que los eliminemos. Oposición: que dejemos de usarlos para un fin. También puedes revocar tu consentimiento o limitar el uso de tus datos."
+          ]
+        },
+        {
+          "title": "Cómo hacer tu solicitud",
+          "paragraphs": [
+            "Escribe a {email} con el asunto Derechos ARCO. Incluye: tu nombre completo, un correo para responderte, copia de una identificación oficial vigente, qué derecho quieres ejercer, una descripción clara de los datos y, si pides una corrección, el dato correcto con su comprobante.",
+            "Si actúas por otra persona, adjunta carta poder y su identificación."
+          ]
+        },
+        {
+          "title": "Plazos",
+          "paragraphs": [
+            "Te respondemos en un máximo de 20 días hábiles. Si procede, lo hacemos efectivo en los 15 días hábiles siguientes. Podemos ampliar los plazos una vez, y te lo avisaremos."
+          ]
+        },
+        {
+          "title": "Si eres cliente de un taller",
+          "paragraphs": [
+            "Tus datos los controla el taller. Escríbele al taller. Si nos escribes a nosotros, enviaremos tu solicitud al taller y te avisaremos."
+          ]
+        },
+        {
+          "title": "Cuándo no podemos eliminar",
+          "paragraphs": [
+            "Si la ley nos obliga a conservar un dato, como registros de cobro, lo bloqueamos y lo borramos al terminar el plazo legal."
+          ]
+        },
+        {
+          "title": "Dudas sobre el manejo de tus datos",
+          "paragraphs": [
+            "Escribe a {email}. Si no estás conforme con la respuesta, puedes acudir a la Secretaría Anticorrupción y Buen Gobierno."
+          ]
+        }
+      ]
+    }
+  ]
+}

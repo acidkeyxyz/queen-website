@@ -6,6 +6,8 @@ const values: Record<string, string> = {
   clients: business.stats.clientsRecorded.toLocaleString('es-MX'),
   anchor: business.stats.anchorCustomer,
   email: business.email,
+  legalName: business.legalName,
+  address: business.address,
 };
 
 export const fill = (text: string) =>
