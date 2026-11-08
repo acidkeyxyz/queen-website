@@ -29,6 +29,7 @@ const year = new Date().getFullYear();
         <li><a href={site.href.page('cookies')}>{t.footer.cookies}</a></li>
         <li><a href={site.href.page('refunds')}>{t.footer.refunds}</a></li>
         <li><a href={site.href.page('arco')}>{t.footer.arco}</a></li>
+        {business.hasTracking && <li><button type="button" class="ftr__link" data-consent-open hidden>{t.footer.manage}</button></li>}
       </ul>
     </nav>
     <nav aria-label={t.footer.account}>

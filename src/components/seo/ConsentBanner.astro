@@ -1,0 +1,80 @@
+---
+import { business } from '@/lib/business';
+import { site } from '@/lib/site';
+import { t } from '@/i18n';
+---
+{business.hasTracking && (
+  <section id="consent" class="consent" role="region" aria-labelledby="consent-title" hidden>
+    <div class="container consent__box">
+      <h2 id="consent-title" class="consent__title">{t.consent.title}</h2>
+      <p>{t.consent.text} <a href={site.href.page('cookies')}>{t.consent.policy}</a></p>
+      <div class="consent__prefs" id="consent-prefs" hidden>
+        <label><input type="checkbox" id="consent-a" /> {t.consent.analytics}</label>
+        <label><input type="checkbox" id="consent-m" /> {t.consent.marketing}</label>
+        <button type="button" class="btn btn--outline" id="consent-save">{t.consent.save}</button>
+      </div>
+      <div class="consent__actions" id="consent-actions">
+        <button type="button" class="btn btn--outline" id="consent-reject">{t.consent.reject}</button>
+        <button type="button" class="btn btn--outline" id="consent-config">{t.consent.config}</button>
+        <button type="button" class="btn btn--outline" id="consent-accept">{t.consent.accept}</button>
+      </div>
+    </div>
+  </section>
+)}
+<script is:inline>
+  (function () {
+    var box = document.getElementById('consent');
+    var c = window.yuriConsent;
+    if (!box || !c) return;
+    var prefs = document.getElementById('consent-prefs');
+    var actions = document.getElementById('consent-actions');
+    var a = document.getElementById('consent-a');
+    var m = document.getElementById('consent-m');
+    function show(config) {
+      var s = c.get() || {};
+      a.checked = !!s.a;
+      m.checked = !!s.m;
+      prefs.hidden = !config;
+      actions.hidden = config;
+      box.hidden = false;
+      (config ? a : document.getElementById('consent-reject')).focus();
+    }
+    function done(p) {
+      c.set(p);
+      box.hidden = true;
+    }
+    document.getElementById('consent-accept').onclick = function () { done({ a: 1, m: 1 }); };
+    document.getElementById('consent-reject').onclick = function () { done({ a: 0, m: 0 }); };
+    document.getElementById('consent-config').onclick = function () { show(true); };
+    document.getElementById('consent-save').onclick = function () { done({ a: a.checked ? 1 : 0, m: m.checked ? 1 : 0 }); };
+    box.addEventListener('keydown', function (e) { if (e.key === 'Escape' && c.get()) box.hidden = true; });
+    document.querySelectorAll('[data-consent-open]').forEach(function (b) {
+      b.hidden = false;
+      b.onclick = function () { show(true); };
+    });
+    if (!c.get()) box.hidden = false;
+  })();
+</script>
+<style is:global>
+  .consent {
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 100;
+    background: var(--white);
+    color: var(--text);
+    border-top: 3px solid var(--ink);
+    box-shadow: 0 -8px 32px rgb(24 23 106 / 0.18);
+    padding-block: 1.25rem calc(1.25rem + env(safe-area-inset-bottom));
+  }
+  .consent[hidden] { display: none; }
+  .consent__box { display: grid; gap: 0.75rem; max-width: 60rem; }
+  .consent__title { font-size: 1.125rem; margin: 0; }
+  .consent p { margin: 0; max-width: var(--measure); }
+  .consent a { color: var(--primary); text-decoration: underline; }
+  .consent__actions, .consent__prefs { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+  .consent__prefs { flex-direction: column; align-items: flex-start; }
+  .consent__prefs[hidden], .consent__actions[hidden] { display: none; }
+  .consent label { display: flex; gap: 0.75rem; align-items: center; min-height: 44px; }
+  .consent input[type='checkbox'] { width: 1.5rem; height: 1.5rem; }
+  .ftr__link { background: none; border: 0; padding: 0; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; min-height: 44px; }
+</style>
