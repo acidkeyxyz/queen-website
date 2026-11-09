@@ -38,14 +38,14 @@
           "title": "Para qué los usamos",
           "paragraphs": [
             "Finalidades necesarias: crear y administrar tu cuenta, prestar el servicio, cobrar la suscripción, dar soporte, responder tus mensajes, prevenir abusos y cumplir obligaciones legales.",
-            "Finalidades que requieren tu consentimiento: medir el uso del sitio (Google Analytics), medir y mejorar nuestra publicidad (Meta) y enviarte información comercial de {brand}.",
-            "Si no quieres las finalidades que requieren consentimiento, no marques las casillas ni aceptes las cookies. Esto no afecta el servicio. Puedes retirar tu consentimiento en cualquier momento escribiendo a {email}."
+            "Finalidades que requieren tu consentimiento: medir el uso del sitio (Google Analytics), medir y mejorar nuestra publicidad (Meta) y enviarte información comercial de {brand} por correo, llamada, mensaje de texto o WhatsApp al teléfono y correo que nos diste, y usar tu correo o número de teléfono para mostrarte o excluirte de anuncios en Meta (Facebook e Instagram) y otras plataformas.",
+            "Si no quieres las finalidades que requieren consentimiento, no marques la casilla de información comercial ni aceptes las cookies. Puedes pedir que dejemos de escribirte o llamarte, y retirar tu correo o teléfono de las audiencias de anuncios, en cualquier momento. Esto no afecta el servicio. Puedes retirar tu consentimiento en cualquier momento escribiendo a {email}."
           ]
         },
         {
           "title": "Con quién compartimos datos",
           "paragraphs": [
-            "Solo con proveedores que nos ayudan a operar y que tratan los datos por nuestra cuenta: Stripe (cobros), Google (inicio de sesión y analítica), Meta (publicidad, solo con tu consentimiento), DigitalOcean (alojamiento), Telegram (si usas el bot) y nuestro proveedor de correo.",
+            "Solo con proveedores que nos ayudan a operar y que tratan los datos por nuestra cuenta: Stripe (cobros), Google (inicio de sesión y analítica), Meta y otras plataformas de publicidad (a las que podemos enviar tu correo o teléfono, cifrados, para anuncios y mensajes, solo con tu consentimiento), DigitalOcean (alojamiento), Telegram (si usas el bot) y nuestro proveedor de correo.",
             "Algunos están fuera de México, por lo que tus datos pueden transferirse al extranjero. No vendemos tus datos. Compartiremos datos con autoridades solo cuando la ley lo exija."
           ]
         },
