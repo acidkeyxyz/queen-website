@@ -14,7 +14,7 @@ const schema = z.object({
   address: z.string(),
   areaServed: z.string(),
   social: z.array(z.string().url()),
-  analytics: z.object({ gtm: z.string(), ga4: z.string() }),
+  analytics: z.object({ gtm: z.string(), ga4: z.string(), metaPixel: z.string() }),
   stats: z.object({ clientsRecorded: z.number(), anchorCustomer: z.string() }),
   currency: z.string(),
   developer: z.object({ name: z.string(), company: z.string(), url: z.string().url() }),
@@ -32,6 +32,7 @@ export const business = {
   appSales: `${parsed.appUrl}/contact-sales`,
   hasPhone: isSet(parsed.phone),
   hasWhatsapp: isSet(parsed.whatsapp),
+  hasTracking: isSet(parsed.analytics.gtm) || isSet(parsed.analytics.ga4) || isSet(parsed.analytics.metaPixel),
   hasLegalName: isSet(parsed.legalName),
   telHref: isSet(parsed.phone) ? `tel:+${digits(parsed.phone)}` : '',
   waHref: (message = '') =>

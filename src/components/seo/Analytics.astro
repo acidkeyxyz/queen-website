@@ -1,21 +1,74 @@
 ---
 import { business } from '@/lib/business';
 
-const { gtm, ga4 } = business.analytics;
+const { gtm, ga4, metaPixel } = business.analytics;
+const ids = { gtm, ga4, pixel: metaPixel };
 ---
-{gtm && (
-  <script is:inline define:vars={{ gtm }}>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',gtm);
+{business.hasTracking && (
+  <script is:inline define:vars={{ ids }}>
+    (function () {
+      var w = window, d = document;
+      w.dataLayer = w.dataLayer || [];
+      function gtag() { w.dataLayer.push(arguments); }
+      gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
+      var loaded = {};
+      function read() {
+        try {
+          var m = d.cookie.match(/(?:^|; )cookie_consent=([^;]*)/);
+          return m ? JSON.parse(decodeURIComponent(m[1])) : null;
+        } catch (e) { return null; }
+      }
+      function write(p) {
+        d.cookie = 'cookie_consent=' + encodeURIComponent(JSON.stringify(p)) + '; max-age=31536000; path=/; SameSite=Lax' + (location.protocol === 'https:' ? '; Secure' : '');
+      }
+      function script(src) { var s = d.createElement('script'); s.async = true; s.src = src; d.head.appendChild(s); }
+      function wipe(re) {
+        d.cookie.split('; ').forEach(function (c) {
+          var n = c.split('=')[0];
+          if (!re.test(n)) return;
+          var host = location.hostname.split('.');
+          for (var i = 0; i < host.length - 1; i++) {
+            d.cookie = n + '=; max-age=0; path=/; domain=.' + host.slice(i).join('.');
+          }
+          d.cookie = n + '=; max-age=0; path=/';
+        });
+      }
+      function apply(p) {
+        var a = p.a ? 'granted' : 'denied', m = p.m ? 'granted' : 'denied';
+        gtag('consent', 'update', { analytics_storage: a, ad_storage: m, ad_user_data: m, ad_personalization: m });
+        if (p.a && !loaded.g) {
+          loaded.g = 1;
+          if (ids.gtm) {
+            w.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+            script('https://www.googletagmanager.com/gtm.js?id=' + ids.gtm);
+          } else if (ids.ga4) {
+            script('https://www.googletagmanager.com/gtag/js?id=' + ids.ga4);
+            gtag('js', new Date());
+            gtag('config', ids.ga4, { anonymize_ip: true });
+          }
+        }
+        if (p.m && ids.pixel && !loaded.f) {
+          loaded.f = 1;
+          var n = w.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+          if (!w._fbq) w._fbq = n;
+          n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+          script('https://connect.facebook.net/en_US/fbevents.js');
+          n('init', ids.pixel);
+          n('track', 'PageView');
+        }
+        if (!p.a) wipe(/^(_ga|_gid|_gat)/);
+        if (!p.m) wipe(/^_fbp$/);
+      }
+      w.yuriConsent = {
+        get: read,
+        set: function (p) {
+          write(p);
+          apply(p);
+          d.dispatchEvent(new CustomEvent('consentchange'));
+        },
+      };
+      var saved = read();
+      if (saved) apply(saved);
+    })();
   </script>
-)}
-{!gtm && ga4 && (
-  <>
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga4}`}></script>
-    <script is:inline define:vars={{ ga4 }}>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', ga4);
-    </script>
-  </>
 )}
