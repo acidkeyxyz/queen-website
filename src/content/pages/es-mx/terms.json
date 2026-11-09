@@ -45,6 +45,14 @@
           ]
         },
         {
+          "title": "Datos de contacto y comunicación comercial",
+          "paragraphs": [
+            "El teléfono móvil, el correo y el nombre que nos das se usan para operar tu cuenta y atenderte. Si además marcas la casilla opcional de información comercial, podemos usar tu teléfono móvil y tu correo para enviarte promociones y novedades de {brand} por correo, llamada, mensaje de texto o WhatsApp.",
+            "Con ese mismo permiso, podemos enviar tu teléfono o correo, cifrados, a Meta (por ejemplo Instagram, Facebook y WhatsApp) y a otras plataformas de publicidad, para mostrarte anuncios o medir su resultado.",
+            "Esto es opcional: no es condición para usar el servicio. Puedes retirar tu permiso cuando quieras escribiendo a {email}. El detalle está en el Aviso de Privacidad."
+          ]
+        },
+        {
           "title": "Disponibilidad",
           "paragraphs": [
             "Hacemos esfuerzos razonables para que el servicio esté disponible, pero no prometemos que funcione sin interrupciones ni errores. Podemos hacer mantenimiento."
