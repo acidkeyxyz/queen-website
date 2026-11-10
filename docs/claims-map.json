@@ -1,0 +1,277 @@
+{
+  "_about": "Links website pages to the module guides in ../queen-webapp/docs/modules. Read by scripts/verify-claims.mjs and the verify-website-vs-modules skill.",
+  "pages": {
+    "quotes": [
+      "salesList"
+    ],
+    "checkin": [
+      "vehicleCheckIn",
+      "salesList"
+    ],
+    "garage": [
+      "garageList"
+    ],
+    "work-orders": [
+      "tasksOrders-Menu",
+      "taskCatalogList"
+    ],
+    "paint": [
+      "formulas-menu",
+      "suppliesList"
+    ],
+    "quality": [
+      "qualityInspector",
+      "secPoints-menu"
+    ],
+    "payments": [
+      "payments-menu",
+      "listExpenses",
+      "metricsReports"
+    ],
+    "memberships": [
+      "memberships",
+      "metricsMemberships"
+    ],
+    "metrics": [
+      "metricsSales",
+      "metricsMemberships",
+      "metricsReports"
+    ],
+    "timeclock": [
+      "timeClock"
+    ],
+    "calendar": [
+      "dates-menu"
+    ],
+    "chat": [
+      "chat-menu"
+    ],
+    "supplies": [
+      "suppliesList",
+      "suppliers-menu"
+    ],
+    "customers": [
+      "clients",
+      "vehiclesList"
+    ],
+    "imports": [
+      "importsList"
+    ],
+    "cloud": [
+      "updloadImages"
+    ]
+  },
+  "notOnSite": {
+    "usersList": "Admin screen; mentioned only as roles and permissions in FAQs",
+    "roleList": "Admin screen (Accesos); mentioned as permissions per role",
+    "companyList": "Admin screen; the site mentions time zone per company",
+    "eventList": "Audit log, not a selling point",
+    "modalNotifList": "Internal announcements screen",
+    "branches-menu": "Covered by the plan limits (branches) on pricing and FAQs",
+    "tiresList": "Catalog of tires and parts; the quotes page talks about the catalog",
+    "addTires": "Part of the product catalog",
+    "loadTiresBtn": "Part of the product catalog"
+  },
+  "evidence": [
+    {
+      "page": "quotes",
+      "phrase": "Telegram",
+      "guide": "salesList",
+      "mustContain": "Vincular Telegram"
+    },
+    {
+      "page": "quotes",
+      "phrase": "transcripción",
+      "guide": "salesList",
+      "mustContain": "Transcripción"
+    },
+    {
+      "page": "garage",
+      "phrase": "Retrasados",
+      "guide": "garageList",
+      "mustContain": "Retrasados"
+    },
+    {
+      "page": "garage",
+      "phrase": "Retrabajos",
+      "guide": "garageList",
+      "mustContain": "Retrabajos"
+    },
+    {
+      "page": "garage",
+      "phrase": "Sin check-in",
+      "guide": "garageList",
+      "mustContain": "Sin check-in"
+    },
+    {
+      "page": "garage",
+      "phrase": "Entregados",
+      "guide": "garageList",
+      "mustContain": "Entregados"
+    },
+    {
+      "page": "memberships",
+      "phrase": "Básica",
+      "guide": "memberships",
+      "mustContain": "Básica"
+    },
+    {
+      "page": "memberships",
+      "phrase": "Premium",
+      "guide": "memberships",
+      "mustContain": "Premium"
+    },
+    {
+      "page": "memberships",
+      "phrase": "usos",
+      "guide": "memberships",
+      "mustContain": "Disponibles"
+    },
+    {
+      "page": "work-orders",
+      "phrase": "hojalatero",
+      "guide": "taskCatalogList",
+      "mustContain": "Hojalatero"
+    },
+    {
+      "page": "work-orders",
+      "phrase": "ensamblador",
+      "guide": "taskCatalogList",
+      "mustContain": "Ensamblador"
+    },
+    {
+      "page": "work-orders",
+      "phrase": "duración estimada",
+      "guide": "taskCatalogList",
+      "mustContain": "Duración"
+    },
+    {
+      "page": "checkin",
+      "phrase": "tamaño del vehículo",
+      "guide": "vehicleCheckIn",
+      "mustContain": "Tamano"
+    },
+    {
+      "page": "paint",
+      "phrase": "insumos pesados",
+      "guide": "formulas-menu",
+      "mustContain": "Registrar Pesos"
+    },
+    {
+      "page": "quality",
+      "phrase": "puntos de seguridad",
+      "guide": "secPoints-menu",
+      "mustContain": "Puntos de Seguridad"
+    },
+    {
+      "page": "payments",
+      "phrase": "gastos",
+      "guide": "listExpenses",
+      "mustContain": "Gastos"
+    },
+    {
+      "page": "metrics",
+      "phrase": "resumen diario",
+      "guide": "metricsReports",
+      "mustContain": "Reporte Diario"
+    },
+    {
+      "page": "timeclock",
+      "phrase": "PIN",
+      "guide": "timeClock",
+      "mustContain": "PIN"
+    },
+    {
+      "page": "timeclock",
+      "phrase": "Excel",
+      "guide": "timeClock",
+      "mustContain": "Excel"
+    },
+    {
+      "page": "timeclock",
+      "phrase": "confirma su semana",
+      "guide": "timeClock",
+      "mustContain": "Confirmar semana"
+    },
+    {
+      "page": "calendar",
+      "phrase": "Hoy",
+      "guide": "dates-menu",
+      "mustContain": "Hoy"
+    },
+    {
+      "page": "chat",
+      "phrase": "solo administradores",
+      "guide": "chat-menu",
+      "mustContain": "Solo admins"
+    },
+    {
+      "page": "supplies",
+      "phrase": "stock",
+      "guide": "suppliesList",
+      "mustContain": "Nuevo Stock"
+    },
+    {
+      "page": "supplies",
+      "phrase": "marcas",
+      "guide": "suppliers-menu",
+      "mustContain": "Marcas"
+    },
+    {
+      "page": "customers",
+      "phrase": "RFC",
+      "guide": "clients",
+      "mustContain": "RFC"
+    },
+    {
+      "page": "customers",
+      "phrase": "VIN",
+      "guide": "vehiclesList",
+      "mustContain": "VIN"
+    },
+    {
+      "page": "customers",
+      "phrase": "historial de servicio",
+      "guide": "vehiclesList",
+      "mustContain": "Historial de servicio"
+    },
+    {
+      "page": "imports",
+      "phrase": "aprobar",
+      "guide": "importsList",
+      "mustContain": "Aprobar"
+    },
+    {
+      "page": "cloud",
+      "phrase": "analiza",
+      "guide": "updloadImages",
+      "mustContain": "Analizar presupuesto"
+    }
+  ],
+  "banned": [
+    {
+      "term": "WhatsApp",
+      "allowedIn": [
+        "privacy",
+        "privacy-short",
+        "terms",
+        "cookies",
+        "refunds",
+        "arco"
+      ],
+      "why": "Quotes go by Telegram; WhatsApp is only named in the legal text about Meta"
+    },
+    {
+      "term": "sellos",
+      "allowedIn": [],
+      "why": "Memberships are tarjetas de lealtad Básica and Premium"
+    }
+  ],
+  "unverified": [
+    {
+      "page": "quotes",
+      "claim": "Precios para clientes mayoristas y preferentes",
+      "todo": "docs/CLAIMS-TO-VERIFY.md"
+    }
+  ]
+}
