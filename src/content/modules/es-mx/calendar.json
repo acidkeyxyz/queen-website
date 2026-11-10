@@ -1,0 +1,70 @@
+{
+  "order": 11,
+  "stage": false,
+  "slug": "calendario",
+  "icon": "calendar",
+  "cardTitle": "Calendario",
+  "cardTagline": "Pagos, entregas y tareas en una vista",
+  "title": "Todas las fechas del taller en un calendario",
+  "lede": "El calendario junta en una sola vista los pagos, las entregas y las tareas, para ver qué viene cada mes.",
+  "seoTitle": "Calendario del taller: pagos, entregas y tareas | YuriApp",
+  "seoDescription": "El calendario de YuriApp junta pagos, entregas y tareas en una sola vista. Cambia de mes, elige qué datos ver y abre el detalle de cada día.",
+  "keywords": [
+    "calendario de taller",
+    "agenda de entregas",
+    "control de pagos"
+  ],
+  "highlights": [
+    {
+      "title": "Una sola vista",
+      "text": "Los pagos, las entregas y las tareas aparecen juntos en el mes."
+    },
+    {
+      "title": "Tú eliges qué ver",
+      "text": "Filtra por tipo de datos para ver solo lo que te interesa."
+    },
+    {
+      "title": "Detalle por día",
+      "text": "Pulsa un día para ver el detalle. Usa las flechas para cambiar de mes y Hoy para volver al mes actual."
+    }
+  ],
+  "idealFor": [
+    "Dueños que quieren ver las fechas importantes del mes",
+    "Talleres con entregas y cobros repartidos en la semana"
+  ],
+  "sample": {
+    "title": "Calendario",
+    "rows": [
+      {
+        "label": "Vista",
+        "value": "Mes",
+        "tone": "idle"
+      },
+      {
+        "label": "Tipos de datos",
+        "value": "Pagos, entregas y tareas",
+        "tone": "info"
+      },
+      {
+        "label": "Día seleccionado",
+        "value": "Detalle",
+        "tone": "ok"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Qué muestra el calendario?",
+      "a": "Las fechas de pagos, entregas y tareas en una sola vista mensual."
+    },
+    {
+      "q": "¿Puedo ver solo un tipo de dato?",
+      "a": "Sí. Elige los tipos de datos que quieres ver y el calendario muestra solo esos."
+    },
+    {
+      "q": "¿Cómo cambio de mes?",
+      "a": "Con las flechas del calendario. El botón Hoy te regresa al mes actual."
+    }
+  ]
+}

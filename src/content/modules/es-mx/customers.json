@@ -1,0 +1,70 @@
+{
+  "order": 14,
+  "stage": false,
+  "slug": "clientes-y-vehiculos",
+  "icon": "users",
+  "cardTitle": "Clientes y vehículos",
+  "cardTagline": "Cada cliente con sus autos y su historial",
+  "title": "Cada cliente con sus autos y su historial de servicio",
+  "lede": "Guarda a cada cliente una sola vez, con sus datos para facturar y sus vehículos, y consulta todos los trabajos que le has hecho a cada auto.",
+  "seoTitle": "Clientes y vehículos: expediente y historial | YuriApp",
+  "seoDescription": "Guarda tus clientes y sus vehículos con placa, VIN y kilometraje, y consulta el historial de servicio de cada auto en YuriApp.",
+  "keywords": [
+    "expediente de cliente",
+    "historial de servicio",
+    "registro de vehículos"
+  ],
+  "highlights": [
+    {
+      "title": "Clientes con datos para facturar",
+      "text": "Nombre, celular, RFC, correo y dirección en el expediente del cliente."
+    },
+    {
+      "title": "Vehículos con su ficha",
+      "text": "Marca, modelo, año, placa, VIN, color y kilometraje de cada auto, ligado a su dueño."
+    },
+    {
+      "title": "Historial de servicio",
+      "text": "Abre un auto y ve todos los trabajos que le has hecho. Si tienes órdenes antiguas, puedes importar los vehículos desde el histórico."
+    }
+  ],
+  "idealFor": [
+    "Talleres que hoy buscan el historial de un auto entre papeles",
+    "Dueños con clientes que regresan"
+  ],
+  "sample": {
+    "title": "Cliente",
+    "rows": [
+      {
+        "label": "Cliente",
+        "value": "Expediente",
+        "tone": "idle"
+      },
+      {
+        "label": "Vehículos",
+        "value": "Con placa y VIN",
+        "tone": "info"
+      },
+      {
+        "label": "Historial",
+        "value": "Trabajos por auto",
+        "tone": "ok"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Qué guardo de cada cliente?",
+      "a": "Nombre, apellidos, celular, placas y, si pide factura, RFC, correo y dirección."
+    },
+    {
+      "q": "¿Qué datos lleva cada vehículo?",
+      "a": "Marca, modelo, año, placa, VIN, color y kilometraje, ligados a su cliente."
+    },
+    {
+      "q": "¿Puedo ver el historial de un auto?",
+      "a": "Sí. En Vehículos abres el historial de servicio de cada auto y ves todos sus trabajos."
+    }
+  ]
+}

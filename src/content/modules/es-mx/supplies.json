@@ -1,0 +1,70 @@
+{
+  "order": 13,
+  "stage": false,
+  "slug": "insumos-y-proveedores",
+  "icon": "paint",
+  "cardTitle": "Insumos y proveedores",
+  "cardTagline": "Tu inventario y a quién se lo compras",
+  "title": "Controla tus insumos y a quién se los compras",
+  "lede": "Lleva el inventario de pintura, lijas, solventes y más, actualiza el stock cuando llegue o se gaste material, y guarda los datos de tus proveedores.",
+  "seoTitle": "Insumos y proveedores para talleres | YuriApp",
+  "seoDescription": "Controla el inventario de insumos de tu taller, actualiza el stock por sucursal y guarda los datos de tus proveedores en YuriApp.",
+  "keywords": [
+    "inventario de taller",
+    "control de insumos",
+    "proveedores de pintura"
+  ],
+  "highlights": [
+    {
+      "title": "Inventario de materiales",
+      "text": "Cada insumo tiene código, descripción, marca, categoría, precio y sucursal, con su stock."
+    },
+    {
+      "title": "Actualiza el stock",
+      "text": "Cuando llegue o se gaste material, capturas el nuevo stock. Para pintura, también el peso del contenedor."
+    },
+    {
+      "title": "Directorio de proveedores",
+      "text": "Guarda nombre, contacto, correo, teléfono, dirección y marcas de cada proveedor, y cuántos insumos le compras."
+    }
+  ],
+  "idealFor": [
+    "Talleres de pintura que quieren saber cuánto material tienen",
+    "Dueños que compran a varios proveedores"
+  ],
+  "sample": {
+    "title": "Insumos",
+    "rows": [
+      {
+        "label": "Stock",
+        "value": "Por insumo",
+        "tone": "info"
+      },
+      {
+        "label": "Sucursal",
+        "value": "Por sucursal",
+        "tone": "idle"
+      },
+      {
+        "label": "Proveedor",
+        "value": "Con contacto y marcas",
+        "tone": "ok"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Qué datos lleva cada insumo?",
+      "a": "Código, descripción, marca, categoría, precio, sucursal y stock."
+    },
+    {
+      "q": "¿Se relaciona con la pintura?",
+      "a": "Sí. Los insumos son los componentes de las fórmulas de pintura, así que primero das de alta el material y luego lo usas en la fórmula."
+    },
+    {
+      "q": "¿Qué guardo de cada proveedor?",
+      "a": "Nombre, contacto, correo, teléfono, dirección y las marcas que vende."
+    }
+  ]
+}

@@ -11,7 +11,7 @@ interface Props {
   level?: 1 | 2;
 }
 const { block, level = 2 } = Astro.props;
-const counters: Record<string, number> = { modules: site.modules.length, specialists: 5 };
+const counters: Record<string, number> = { modules: site.modules.filter((m) => m.data.stage).length, specialists: 8 };
 ---
 <section class="section section--ink stats">
   <div class="container">

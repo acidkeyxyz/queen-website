@@ -137,6 +137,7 @@ const modules = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/modules', generateId: byPath }),
   schema: z.object({
     order: z.number(),
+    stage: z.boolean().default(true),
     slug: z.string().regex(/^[a-z0-9-]+$/, 'slug: minúsculas, números y guiones'),
     icon,
     cardTitle: z.string(),

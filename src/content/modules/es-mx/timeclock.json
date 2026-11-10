@@ -1,0 +1,79 @@
+{
+  "order": 10,
+  "stage": false,
+  "slug": "reloj-checador",
+  "icon": "phoneDevice",
+  "cardTitle": "Reloj checador",
+  "cardTagline": "Entrada y salida con el celular y un QR",
+  "title": "Registro electrónico de entrada y salida de tu equipo",
+  "lede": "Tus trabajadores checan con el celular y el código QR de la sucursal, y tú ves quién está trabajando, en descanso o fuera, con reportes en Excel.",
+  "seoTitle": "Reloj checador: registro de entrada y salida | YuriApp",
+  "seoDescription": "Reloj checador de YuriApp: tu equipo checa con el celular y un QR, ves quién trabaja y descargas reportes en Excel del registro de jornada.",
+  "keywords": [
+    "reloj checador",
+    "registro de jornada",
+    "control de asistencia",
+    "LFT artículo 132 fracción XXXIV"
+  ],
+  "highlights": [
+    {
+      "title": "Checa con el celular o con PIN",
+      "text": "El trabajador escanea el QR del kiosco de su sucursal con la cámara del teléfono. Si no tiene teléfono, usa su usuario y un PIN en el kiosco."
+    },
+    {
+      "title": "Tablero diario",
+      "text": "Ves quién está trabajando, en descanso o fuera, y quién olvidó checar su salida."
+    },
+    {
+      "title": "Correcciones que no borran",
+      "text": "Un encargado puede agregar o anular una checada con un motivo. Nada se borra, y el trabajador acepta o rechaza la corrección."
+    },
+    {
+      "title": "Semana confirmada y reportes",
+      "text": "Cada trabajador confirma su semana. Tú descargas en Excel las horas ordinarias, dobles y triples, domingos y festivos, y cada checada."
+    }
+  ],
+  "idealFor": [
+    "Patrones que deben registrar la entrada y la salida de su personal",
+    "Talleres con varias sucursales"
+  ],
+  "sample": {
+    "title": "Reloj checador",
+    "rows": [
+      {
+        "label": "Empleado A",
+        "value": "Trabajando",
+        "tone": "ok"
+      },
+      {
+        "label": "Empleado B",
+        "value": "En descanso",
+        "tone": "info"
+      },
+      {
+        "label": "Empleado C",
+        "value": "Sin salida",
+        "tone": "warn"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Qué pide la ley?",
+      "a": "La Ley Federal del Trabajo (Art. 132 fr. XXXIV) pide que el patrón registre de forma electrónica la entrada y la salida de cada trabajador; las reglas de la STPS aplican desde el 1 de enero de 2027. Consulta a tu asesor para tu caso."
+    },
+    {
+      "q": "¿Cómo checa el trabajador?",
+      "a": "Escanea con su teléfono el QR del kiosco de su sucursal, entra con su usuario y registra la checada. Sin teléfono, crea su PIN y usa usuario y PIN en el kiosco."
+    },
+    {
+      "q": "¿Se pueden editar las checadas?",
+      "a": "No se borran ni se cambian. Una corrección queda guardada como un registro nuevo, con su motivo y la respuesta del trabajador."
+    },
+    {
+      "q": "¿Calcula las horas extra?",
+      "a": "Sí, como cálculo de apoyo en el reporte. Revísalas con tu contador antes de usarlas para nómina."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "order": 15,
+  "stage": false,
+  "slug": "importacion-de-datos",
+  "icon": "upload",
+  "cardTitle": "Importación de datos",
+  "cardTagline": "Trae tus datos con archivos CSV",
+  "title": "Trae los datos que ya tienes con un archivo CSV",
+  "lede": "Sube un archivo CSV desde cada módulo, revisa fila por fila qué pasó y aprueba o rechaza la carga desde un historial.",
+  "seoTitle": "Importación de datos con CSV para tu taller | YuriApp",
+  "seoDescription": "Importa los datos que ya tiene tu taller con archivos CSV, revisa cada fila con sus errores y aprueba o rechaza la carga en YuriApp.",
+  "keywords": [
+    "importar datos CSV",
+    "migrar datos de taller",
+    "carga masiva"
+  ],
+  "highlights": [
+    {
+      "title": "Importar desde cada módulo",
+      "text": "Los módulos con botón Importar reciben tu archivo CSV."
+    },
+    {
+      "title": "Historial de importaciones",
+      "text": "Ves cada carga con su módulo, modo, archivo, resultado y estatus."
+    },
+    {
+      "title": "Detalle fila por fila",
+      "text": "Abre una importación para ver qué pasó con cada fila y cuáles tuvieron errores."
+    },
+    {
+      "title": "Aprobar o rechazar",
+      "text": "Quien revisa la carga puede aprobarla o rechazarla."
+    }
+  ],
+  "idealFor": [
+    "Talleres que vienen de una hoja de cálculo"
+  ],
+  "sample": {
+    "title": "Importaciones",
+    "rows": [
+      {
+        "label": "Archivo",
+        "value": "CSV",
+        "tone": "idle"
+      },
+      {
+        "label": "Resultado",
+        "value": "Fila por fila",
+        "tone": "info"
+      },
+      {
+        "label": "Estatus",
+        "value": "Por aprobar",
+        "tone": "warn"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Puedo traer los datos que ya tengo?",
+      "a": "Sí. YuriApp permite importar archivos CSV desde los módulos que tienen el botón Importar."
+    },
+    {
+      "q": "¿Cómo sé si salió bien?",
+      "a": "En el historial ves el resultado de cada carga y, al abrirla, el detalle de cada fila con sus errores."
+    },
+    {
+      "q": "¿Alguien puede revisar antes?",
+      "a": "Sí. Quien revisa la importación puede aprobarla o rechazarla."
+    }
+  ]
+}

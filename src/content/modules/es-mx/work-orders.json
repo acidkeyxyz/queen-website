@@ -5,9 +5,9 @@
   "cardTitle": "Órdenes de trabajo",
   "cardTagline": "Tareas por especialista y mano de obra",
   "title": "Órdenes de trabajo con tareas para cada especialista",
-  "lede": "Asigna tareas a hojalateros, pintores, preparadores, pulidores y mecánicos, con catálogo de tareas y costo de mano de obra.",
+  "lede": "Asigna tareas a hojalateros, pintores, preparadores, pulidores, mecánicos y ensambladores, con catálogo de tareas y duración estimada.",
   "seoTitle": "Órdenes de trabajo para talleres de hojalatería y pintura | YuriApp",
-  "seoDescription": "Crea órdenes de trabajo y asigna tareas a hojalateros, pintores, preparadores, pulidores y mecánicos, con catálogo de tareas y costo de mano de obra.",
+  "seoDescription": "Crea órdenes de trabajo y asigna tareas a hojalateros, pintores, preparadores, pulidores, mecánicos y ensambladores, con catálogo de tareas.",
   "keywords": [
     "orden de trabajo taller",
     "tareas por especialista",
@@ -16,11 +16,11 @@
   "highlights": [
     {
       "title": "Tareas por especialista",
-      "text": "Cada tarea se asigna a un hojalatero, pintor, preparador, pulidor o mecánico."
+      "text": "Cada tarea se asigna a un hojalatero, pintor, preparador, pulidor, mecánico o ensamblador."
     },
     {
       "title": "Catálogo de tareas",
-      "text": "Defines las tareas una vez, con su costo de mano de obra, y las reutilizas en cada orden."
+      "text": "Defines las tareas una vez, con su especialista y su duración estimada, y las reutilizas en cada orden."
     },
     {
       "title": "Costo por orden",
@@ -60,11 +60,11 @@
   "faqs": [
     {
       "q": "¿Qué especialistas se pueden asignar?",
-      "a": "Hojalatero, pintor, preparador, pulidor y mecánico."
+      "a": "Hojalatero, mecánico, pintor, preparador, pulidor, ensamblador, control de calidad o general."
     },
     {
-      "q": "¿Puedo definir el costo de cada tarea?",
-      "a": "Sí. El catálogo de tareas guarda el costo de mano de obra de cada una."
+      "q": "¿Puedo definir cuánto dura cada tarea?",
+      "a": "Sí. El catálogo guarda la duración estimada y el especialista de cada tarea, y el sistema avisa cuando una tarea tarda más de lo estimado."
     },
     {
       "q": "¿La orden se relaciona con el presupuesto?",
