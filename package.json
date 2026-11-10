@@ -9,6 +9,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "verify:claims": "node scripts/verify-claims.mjs",
     "brand:assets": "node scripts/generate-brand-assets.mjs",
     "video:encode": "node scripts/encode-video.mjs"
   },
