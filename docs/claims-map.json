@@ -265,6 +265,38 @@
       "term": "sellos",
       "allowedIn": [],
       "why": "Memberships are tarjetas de lealtad Básica and Premium"
+    },
+    {
+      "term": "plan gratis",
+      "allowedIn": [
+        "refunds",
+        "terms"
+      ],
+      "why": "The business plan has no free tier (SAAS_PLAN.md, Proposed pricing)"
+    },
+    {
+      "term": "plan gratuito",
+      "allowedIn": [
+        "refunds",
+        "terms"
+      ],
+      "why": "The business plan has no free tier"
+    },
+    {
+      "term": "cuenta gratis",
+      "allowedIn": [
+        "refunds",
+        "terms"
+      ],
+      "why": "The business plan has no free tier"
+    },
+    {
+      "term": "$190",
+      "allowedIn": [
+        "refunds",
+        "terms"
+      ],
+      "why": "Old per-seat price"
     }
   ],
   "unverified": [

@@ -25,8 +25,8 @@ const software = {
   description: business.tagline,
   publisher: { '@id': org['@id'] },
   offers: [
-    { '@type': 'Offer', name: 'Gratis', price: '0', priceCurrency: business.currency },
-    { '@type': 'Offer', name: 'Equipo', price: '190', priceCurrency: business.currency, description: 'Por usuario al mes' },
+    { '@type': 'Offer', name: 'Taller', price: '890', priceCurrency: business.currency, description: 'Por mes, pago anual por adelantado, hasta 3 usuarios y 1 sucursal' },
+    { '@type': 'Offer', name: 'Pro', price: '1590', priceCurrency: business.currency, description: 'Por mes, pago anual por adelantado, hasta 10 usuarios y 2 sucursales' },
   ],
 };
 

@@ -69,6 +69,10 @@
     {
       "q": "¿Necesito capturar datos extra?",
       "a": "No. Las métricas salen de lo que ya registras al cotizar, trabajar y cobrar."
+    },
+    {
+      "q": "¿En qué plan están las métricas?",
+      "a": "Las métricas son parte del plan Pro y de Cadena."
     }
   ]
 }

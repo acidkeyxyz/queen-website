@@ -14,10 +14,10 @@
     },
     {
       "type": "cta",
-      "title": "Pruébalo con tu propio taller",
-      "text": "El plan Gratis incluye todas las funciones, con 1 usuario y 1 sucursal.",
+      "title": "Empieza con tu propio taller",
+      "text": "Taller desde $890 MXN al mes, Pro desde $1,590 MXN al mes y Cadena a convenir; pago anual y meses sin intereses. El reloj checador va incluido en todos los planes.",
       "primary": {
-        "label": "Crear cuenta gratis",
+        "label": "Crear cuenta",
         "href": "app:signup"
       },
       "secondary": {

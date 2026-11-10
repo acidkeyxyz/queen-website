@@ -25,7 +25,18 @@ mayoristas y preferentes").
 - [ ] Check-in page, 3D model: the app ships one hatchback model. Confirm before saying more than "tamaño chico, mediano o grande".
 - [ ] Reloj checador page: confirm the time clock migrations (045, 046) are applied in production before announcing the page, and re-check the STPS date (1 Jan 2027) against the official text.
 - [ ] Quotes by Telegram: confirm the bot works for a new workshop (account linking with "Vincular Telegram") and decide whether to link the bot from the page.
-- [ ] Pricing: update the Taller price when the app's `Plan` table changes (the site shows $190 MXN per user per month, minimum 2 users, up to 10 users and 2 branches, as the live app does today).
+- [ ] Pricing (business plan, set by the owner on 2026-11-09, `../SAAS_PLAN.md` "Proposed pricing"): the site shows Taller $890, Pro $1,590 and Cadena by agreement. **The app, Stripe and the legal texts do not match yet.** Before the site goes live with these prices, settle the plan's open questions:
+  - [ ] Does the app (`Plan` table, Stripe prices, signup) sell Taller and Pro? Today it sells FREE, TEAM ($190 per seat) and ENTERPRISE.
+  - [ ] Trial or card up front at signup? The site says neither; the sign-up button reads "Crear cuenta".
+  - [ ] Billing terms (owner, 2026-11-09): plans paid annually up front, a $890 MXN non-refundable onboarding fee every year on top, and 3, 6 or 12 months without interest with a credit card. The site says exactly that. Still open: what the onboarding fee covers (the site does not say), how MSI is configured in Stripe, and whether the sign-up flow charges the fee.
+  - [ ] Hero note says "pago anual y meses sin intereses" but not the onboarding fee; the full price (plan plus fee) is on the pricing page. Ask the lawyer whether the first price a visitor sees must include the fee.
+  - [ ] Refund policy and terms must state that the onboarding fee is not refundable and that plans are charged annually (`refunds.json`, `terms.json`).
+  - [ ] Is IVA included in $890 and $1,590? The site does not say.
+  - [ ] Which modules are in Taller and which in Pro? The site only says what the plan states: Taller has Presupuestos, Órdenes de trabajo and Reloj checador; Pro adds Métricas and the Telegram bot.
+  - [ ] Clock-only workers not counting toward the user limit: not claimed on the site until that user type exists.
+  - [ ] SLA terms for Cadena (response times, hours, channel).
+  - [ ] Plan names are working names (Taller, Pro, Cadena) until the owner confirms.
+  - [ ] Legal texts still describe the old billing: `terms.json` ("se cobra cada mes por usuario") and `refunds.json` ("Plan Gratis"). Update them with the lawyer, not in a content PR.
 
 ## How to re-check
 

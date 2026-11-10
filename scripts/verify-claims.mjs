@@ -64,6 +64,36 @@ const journey = pages.home.blocks.find((b) => b.type === 'journey');
 if (journey && journey.stages.length !== stages) fails.push(`journey has ${journey.stages.length} stages but ${stages} module pages are stages`);
 else ok.push(`journey stages ${stages} = module pages with stage`);
 
+const planFile = process.env.PLAN_FILE || path.join(root, '..', 'SAAS_PLAN.md');
+if (fs.existsSync(planFile)) {
+  const plan = fs.readFileSync(planFile, 'utf8');
+  const section = plan.slice(plan.indexOf('## Proposed pricing'));
+  const priceOf = (name) => (section.match(new RegExp(`\\| ${name} \\| \\*\\*MX\\$([\\d,]+)`)) || [])[1];
+  const priceBlock = pages.pricing.blocks.find((b) => b.type === 'pricing');
+  for (const [key, name] of [['TALLER', 'Taller'], ['PRO', 'Pro']]) {
+    const expected = priceOf(name);
+    const shownPlan = priceBlock.plans.find((p) => p.key === key);
+    if (!expected) warns.push(`could not read the ${name} price from ${planFile}`);
+    else if (!shownPlan || shownPlan.price !== '$' + expected) fails.push(`price of ${name}: site says ${shownPlan && shownPlan.price}, business plan says $${expected}`);
+    else ok.push(`price ${name} $${expected} = business plan`);
+  }
+  const terms = plan.slice(plan.indexOf('**Billing terms'));
+  const priceText = flat([pages.pricing, pages.home]).join('\n').toLowerCase();
+  const money = (n) => '$' + n.toLocaleString('en-US');
+  for (const [name, key] of [['Taller', 'TALLER'], ['Pro', 'PRO']]) {
+    const monthly = Number((priceOf(name) || '0').replace(',', ''));
+    const yearly = monthly * 12;
+    if (monthly && !priceText.includes(money(yearly).toLowerCase())) fails.push(`annual total of ${name} (${money(yearly)}) is missing on the pricing page or home`);
+    else if (monthly) ok.push(`annual total ${name} ${money(yearly)} = monthly x 12`);
+  }
+  const fee = (terms.match(/onboarding fee of MX\$([\d,]+)/) || [])[1];
+  if (fee && (!priceText.includes('cuota de incorporación') || !priceText.includes('$' + fee) || !priceText.includes('no reembolsable'))) fails.push(`onboarding fee $${fee} (non-refundable) is not stated on the pricing page or home`);
+  else if (fee) ok.push(`onboarding fee $${fee}, non-refundable, stated`);
+  const months = (terms.match(/\*\*(\d+, \d+ or \d+) months without interest/) || [])[1];
+  if (months && !priceText.includes(months.replace(' or ', ' o ') + ' meses sin intereses')) fails.push(`MSI "${months}" is not stated as "${months.replace(' or ', ' o ')} meses sin intereses"`);
+  else if (months) ok.push(`MSI ${months} stated`);
+} else warns.push(`${planFile} not found: prices not checked`);
+
 for (const u of map.unverified) warns.push(`UNVERIFIED (kept on purpose): ${u.page}: ${u.claim} -> ${u.todo}`);
 
 console.log(`Checked ${Object.keys(modules).length} module pages against ${Object.keys(guides).length} guides in ${docsDir}\n`);

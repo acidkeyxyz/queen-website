@@ -95,7 +95,7 @@ const blocks = z.array(
       plans: z
         .array(
           z.object({
-            key: z.enum(['FREE', 'TEAM', 'ENTERPRISE']),
+            key: z.enum(['TALLER', 'PRO', 'CADENA']),
             name: z.string(),
             price: z.string(),
             unit: z.string(),

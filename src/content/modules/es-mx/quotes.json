@@ -70,6 +70,10 @@
     {
       "q": "¿Puedo manejar precios distintos por tipo de cliente?",
       "a": "Sí. El catálogo de productos admite precios para clientes mayoristas y preferentes, útil en llanteras y venta de rines."
+    },
+    {
+      "q": "¿En qué plan está el bot de Telegram?",
+      "a": "El bot de Telegram es parte del plan Pro y de Cadena."
     }
   ]
 }
