@@ -20,12 +20,16 @@
           "a": "Para talleres de hojalatería y pintura, y para llanteras y venta de rines. Desde un taller de una sola persona hasta operaciones con varias sucursales."
         },
         {
-          "q": "¿El plan gratuito se acaba?",
-          "a": "No. El plan Gratis no tiene periodo de prueba que venza, así un taller nunca pierde el acceso a su propia información. Incluye 1 usuario y 1 sucursal."
+          "q": "¿Cuánto cuestan los planes?",
+          "a": "Taller cuesta $890 MXN al mes, con hasta 3 usuarios y 1 sucursal. Pro cuesta $1,590 MXN al mes, con hasta 10 usuarios y 2 sucursales. Cadena se acuerda contigo."
         },
         {
-          "q": "¿Cuánto cuesta el plan Taller?",
-          "a": "$190 MXN por usuario al mes, con mínimo de 2 usuarios y hasta 10 usuarios y 2 sucursales. Se cobra cada usuario."
+          "q": "¿Se cobra por usuario?",
+          "a": "No. Cada plan tiene un precio mensual fijo, con su límite de usuarios y sucursales."
+        },
+        {
+          "q": "¿El reloj checador cuesta extra?",
+          "a": "No. El reloj checador está incluido en todos los planes de pago."
         }
       ]
     }

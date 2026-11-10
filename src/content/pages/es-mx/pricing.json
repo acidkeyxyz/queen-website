@@ -3,44 +3,27 @@
   "nav": true,
   "order": 2,
   "title": "Precios",
-  "seoTitle": "Precios de YuriApp: plan Gratis, Taller y Empresarial",
-  "seoDescription": "Plan Gratis sin vencimiento, plan Taller de $190 MXN por usuario al mes y plan Empresarial a convenir. Compara los planes de YuriApp.",
+  "seoTitle": "Precios de YuriApp: planes Taller, Pro y Cadena",
+  "seoDescription": "Planes de YuriApp: Taller de $890 MXN al mes, Pro de $1,590 MXN al mes y Cadena a convenir. El reloj checador va incluido en todos los planes.",
   "blocks": [
     {
       "type": "pricing",
       "title": "Planes y precios",
-      "lede": "Cada taller empieza gratis. Pagas más cuando creces en usuarios o sucursales.",
-      "footnote": "Precios en MXN. El plan Gratis no tiene periodo de prueba que venza.",
+      "lede": "Elige el plan según el tamaño de tu taller. El precio es fijo por plan, no por usuario.",
+      "footnote": "Precios en MXN por mes. Cada plan tiene un precio fijo con su límite de usuarios y sucursales.",
       "plans": [
         {
-          "key": "FREE",
-          "name": "Gratis",
-          "price": "$0",
-          "unit": "sin vencimiento",
-          "users": "1 usuario",
-          "branches": "1 sucursal",
-          "features": [
-            "Todas las funciones del sistema",
-            "Sin periodo de prueba que venza",
-            "Tu propio espacio en tutaller.yuriapp"
-          ],
-          "cta": {
-            "label": "Crear cuenta gratis",
-            "href": "app:signup"
-          }
-        },
-        {
-          "key": "TEAM",
+          "key": "TALLER",
           "name": "Taller",
-          "price": "$190",
-          "unit": "MXN por usuario al mes",
-          "users": "Hasta 10 usuarios",
-          "branches": "2 sucursales",
+          "price": "$890",
+          "unit": "MXN al mes",
+          "users": "Hasta 3 usuarios",
+          "branches": "1 sucursal",
           "featured": true,
           "features": [
-            "Se cobra cada usuario, con mínimo de 2",
-            "Con 2 usuarios son $380 MXN al mes",
-            "Cobro con Stripe, en pesos"
+            "Presupuestos",
+            "Órdenes de trabajo",
+            "Reloj checador incluido"
           ],
           "cta": {
             "label": "Crear cuenta",
@@ -48,15 +31,34 @@
           }
         },
         {
-          "key": "ENTERPRISE",
-          "name": "Empresarial",
+          "key": "PRO",
+          "name": "Pro",
+          "price": "$1,590",
+          "unit": "MXN al mes",
+          "users": "Hasta 10 usuarios",
+          "branches": "2 sucursales",
+          "featured": false,
+          "features": [
+            "Todo lo del plan Taller",
+            "Métricas",
+            "Bot de Telegram"
+          ],
+          "cta": {
+            "label": "Crear cuenta",
+            "href": "app:signup"
+          }
+        },
+        {
+          "key": "CADENA",
+          "name": "Cadena",
           "price": "A convenir",
           "unit": "precio por acuerdo",
-          "users": "Usuarios ilimitados",
-          "branches": "Sucursales ilimitadas",
+          "users": "Usuarios a la medida",
+          "branches": "Más de 2 sucursales",
+          "featured": false,
           "features": [
-            "Para más de 10 usuarios",
-            "Precio y límites por acuerdo"
+            "Todo lo del plan Pro",
+            "Soporte con SLA"
           ],
           "cta": {
             "label": "Hablar con ventas",
@@ -70,12 +72,16 @@
       "title": "Preguntas sobre planes",
       "items": [
         {
-          "q": "¿El plan gratuito se acaba?",
-          "a": "No. El plan Gratis no tiene periodo de prueba que venza, así un taller nunca pierde el acceso a su propia información. Incluye 1 usuario y 1 sucursal."
+          "q": "¿Cuánto cuestan los planes?",
+          "a": "Taller cuesta $890 MXN al mes, con hasta 3 usuarios y 1 sucursal. Pro cuesta $1,590 MXN al mes, con hasta 10 usuarios y 2 sucursales. Cadena se acuerda contigo."
         },
         {
-          "q": "¿Cuánto cuesta el plan Taller?",
-          "a": "$190 MXN por usuario al mes, con mínimo de 2 usuarios y hasta 10 usuarios y 2 sucursales. Se cobra cada usuario."
+          "q": "¿Se cobra por usuario?",
+          "a": "No. Cada plan tiene un precio mensual fijo, con su límite de usuarios y sucursales."
+        },
+        {
+          "q": "¿El reloj checador cuesta extra?",
+          "a": "No. El reloj checador está incluido en todos los planes de pago."
         },
         {
           "q": "¿Puedo traer los datos que ya tengo?",
@@ -85,14 +91,14 @@
     },
     {
       "type": "cta",
-      "title": "¿Más de 10 usuarios?",
-      "text": "El plan Empresarial se acuerda contigo: precio y límites por convenio.",
+      "title": "¿Más de 2 sucursales?",
+      "text": "El plan Cadena se acuerda contigo: precio y límites por convenio.",
       "primary": {
         "label": "Hablar con ventas",
         "href": "app:sales"
       },
       "secondary": {
-        "label": "Crear cuenta gratis",
+        "label": "Crear cuenta",
         "href": "app:signup"
       }
     }

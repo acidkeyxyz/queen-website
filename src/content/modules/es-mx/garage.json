@@ -68,7 +68,7 @@
     },
     {
       "q": "¿Sirve con varias sucursales?",
-      "a": "Sí. {brand} soporta varias sucursales; el plan Taller incluye 2 y el Empresarial no tiene límite."
+      "a": "Sí. {brand} soporta varias sucursales: el plan Taller incluye 1, el plan Pro incluye 2 y Cadena es para más de 2."
     },
     {
       "q": "¿Quién puede ver el tablero?",

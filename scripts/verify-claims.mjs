@@ -64,6 +64,21 @@ const journey = pages.home.blocks.find((b) => b.type === 'journey');
 if (journey && journey.stages.length !== stages) fails.push(`journey has ${journey.stages.length} stages but ${stages} module pages are stages`);
 else ok.push(`journey stages ${stages} = module pages with stage`);
 
+const planFile = process.env.PLAN_FILE || path.join(root, '..', 'SAAS_PLAN.md');
+if (fs.existsSync(planFile)) {
+  const plan = fs.readFileSync(planFile, 'utf8');
+  const section = plan.slice(plan.indexOf('## Proposed pricing'));
+  const priceOf = (name) => (section.match(new RegExp(`\\| ${name} \\| \\*\\*MX\\$([\\d,]+)`)) || [])[1];
+  const priceBlock = pages.pricing.blocks.find((b) => b.type === 'pricing');
+  for (const [key, name] of [['TALLER', 'Taller'], ['PRO', 'Pro']]) {
+    const expected = priceOf(name);
+    const shownPlan = priceBlock.plans.find((p) => p.key === key);
+    if (!expected) warns.push(`could not read the ${name} price from ${planFile}`);
+    else if (!shownPlan || shownPlan.price !== '$' + expected) fails.push(`price of ${name}: site says ${shownPlan && shownPlan.price}, business plan says $${expected}`);
+    else ok.push(`price ${name} $${expected} = business plan`);
+  }
+} else warns.push(`${planFile} not found: prices not checked`);
+
 for (const u of map.unverified) warns.push(`UNVERIFIED (kept on purpose): ${u.page}: ${u.claim} -> ${u.todo}`);
 
 console.log(`Checked ${Object.keys(modules).length} module pages against ${Object.keys(guides).length} guides in ${docsDir}\n`);

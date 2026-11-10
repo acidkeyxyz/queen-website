@@ -74,6 +74,10 @@
     {
       "q": "¿Calcula las horas extra?",
       "a": "Sí, como cálculo de apoyo en el reporte. Revísalas con tu contador antes de usarlas para nómina."
+    },
+    {
+      "q": "¿Cuánto cuesta el reloj checador?",
+      "a": "No tiene costo extra: está incluido en todos los planes de pago."
     }
   ]
 }
