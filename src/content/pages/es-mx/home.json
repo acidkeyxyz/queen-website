@@ -41,8 +41,8 @@
               "tone": "info"
             },
             {
-              "label": "Estado",
-              "value": "Enviado por WhatsApp",
+              "label": "Origen",
+              "value": "Nota de voz en Telegram",
               "tone": "ok"
             }
           ],
@@ -84,7 +84,7 @@
     },
     {
       "type": "problem",
-      "title": "Del caos de WhatsApp y libretas a un sistema que sigue al auto",
+      "title": "Del caos de mensajes y libretas a un sistema que sigue al auto",
       "lede": "El dueño no debería necesitar preguntar de mesa en mesa para saber qué pasa en su taller.",
       "before": {
         "title": "Hoy",
@@ -98,7 +98,7 @@
       "after": {
         "title": "Con {brand}",
         "items": [
-          "Mi Garage muestra cada auto y su etapa",
+          "Mi Garage muestra los autos del taller y cuáles van atrasados",
           "Un presupuesto alimenta la recepción y la orden de trabajo",
           "La recepción en 3D deja constancia pieza por pieza",
           "Pintura y cobros dan el costo real de cada orden"
@@ -135,7 +135,7 @@
         {
           "module": "quotes",
           "label": "Presupuesto",
-          "text": "Cotiza con tu catálogo y envía por WhatsApp."
+          "text": "Cotiza con tu catálogo o con una nota de voz en Telegram."
         },
         {
           "module": "checkin",
@@ -145,7 +145,7 @@
         {
           "module": "garage",
           "label": "En el taller",
-          "text": "Mira cada auto y la etapa en la que va."
+          "text": "Mira los autos del taller, los atrasos y las entregas."
         },
         {
           "module": "work-orders",
@@ -193,7 +193,7 @@
         {
           "icon": "cash",
           "title": "Hecho para México",
-          "text": "Interfaz en español, precios en pesos, RFC en el expediente del cliente, comunicación por WhatsApp y zona horaria por empresa."
+          "text": "Interfaz en español, precios en pesos, RFC en el expediente del cliente, presupuestos por nota de voz en Telegram y zona horaria por empresa."
         },
         {
           "icon": "phoneDevice",

@@ -1,0 +1,69 @@
+{
+  "order": 12,
+  "stage": false,
+  "slug": "chat",
+  "icon": "chat",
+  "cardTitle": "Chat",
+  "cardTagline": "Habla con clientes y con tu equipo",
+  "title": "Chat con tus clientes y con tu equipo",
+  "lede": "Habla con clientes y con otros empleados dentro del sistema, sin salirte de YuriApp.",
+  "seoTitle": "Chat para talleres: clientes y equipo en un lugar | YuriApp",
+  "seoDescription": "El chat de YuriApp te deja hablar con tus clientes y con tu equipo dentro del sistema, con conversaciones separadas y control de quién escribe.",
+  "keywords": [
+    "chat con clientes",
+    "chat de equipo",
+    "comunicación en el taller"
+  ],
+  "highlights": [
+    {
+      "title": "Clientes y empleados",
+      "text": "Pestañas separadas para las conversaciones con clientes y con tu equipo."
+    },
+    {
+      "title": "Control de quién escribe",
+      "text": "Los administradores deciden quién puede escribir: todos o solo administradores."
+    },
+    {
+      "title": "Conversaciones expiradas",
+      "text": "Las conversaciones vencidas quedan aparte, en su propia pestaña."
+    }
+  ],
+  "idealFor": [
+    "Talleres que hoy hablan con su equipo y sus clientes en canales distintos"
+  ],
+  "sample": {
+    "title": "Queen Chat",
+    "rows": [
+      {
+        "label": "Clientes",
+        "value": "Conversaciones",
+        "tone": "info"
+      },
+      {
+        "label": "Empleados",
+        "value": "Conversaciones",
+        "tone": "info"
+      },
+      {
+        "label": "Expirados",
+        "value": "Vencidas",
+        "tone": "idle"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Con quién puedo hablar?",
+      "a": "Con tus clientes y con otros empleados, en pestañas separadas."
+    },
+    {
+      "q": "¿Puedo limitar quién escribe?",
+      "a": "Sí. Un administrador elige si pueden escribir todos o solo los administradores."
+    },
+    {
+      "q": "¿Los mensajes llegan al instante?",
+      "a": "Llegan por consulta periódica, así que pueden tardar unos segundos."
+    }
+  ]
+}

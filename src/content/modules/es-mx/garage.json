@@ -3,28 +3,28 @@
   "slug": "mi-garage",
   "icon": "garage",
   "cardTitle": "Mi Garage",
-  "cardTagline": "Todos los autos del taller y su etapa",
-  "title": "Sabe qué autos tiene el taller y en qué etapa va cada uno",
-  "lede": "Mi Garage muestra cada auto que tiene el taller y en qué etapa va, para saber de un vistazo qué está en proceso y qué se atrasó.",
-  "seoTitle": "Mi Garage: los autos del taller y su etapa | YuriApp",
-  "seoDescription": "Mi Garage muestra cada auto que tiene tu taller y en qué etapa va, para saber qué está en proceso, qué se atrasó y qué falta entregar.",
+  "cardTagline": "Los autos del taller, atrasos y entregas",
+  "title": "Sabe qué autos tiene el taller y cuáles van atrasados",
+  "lede": "Mi Garage muestra los autos que están hoy en el taller y los que ya se entregaron, cuántos van atrasados, cuántos son retrabajos o garantías y cuáles aún no tienen check-in.",
+  "seoTitle": "Mi Garage: los autos del taller, atrasos y entregas | YuriApp",
+  "seoDescription": "Mi Garage muestra los autos que tiene tu taller, cuáles van atrasados, los retrabajos y garantías, y los entregados, con su resumen de tareas y pagos.",
   "keywords": [
     "control de autos en taller",
     "seguimiento de vehículos",
-    "etapas de reparación"
+    "retrabajos y garantías"
   ],
   "highlights": [
     {
-      "title": "Vista de todo el taller",
-      "text": "Cada auto que tienes en el taller aparece con su etapa, sin preguntar de mesa en mesa."
+      "title": "En el taller y entregados",
+      "text": "Dos pestañas: En Mi Garage, con los autos que siguen en el taller, y Entregados, con los que ya salieron."
     },
     {
-      "title": "Etapa por vehículo",
-      "text": "Ves de un vistazo si el auto está en recepción, en trabajo, en pintura o listo para entregar."
+      "title": "Cuadros de resumen",
+      "text": "Arriba ves cuántos autos van Retrasados, cuántos son Retrabajos o Garantías, cuántos están Entregados y cuántos están Sin check-in."
     },
     {
-      "title": "Para el dueño y el equipo",
-      "text": "El mismo tablero lo usa quien atiende al cliente y quien trabaja el auto."
+      "title": "Resumen de cada auto",
+      "text": "Abre un auto y ve sus tareas, piezas, fórmulas, gastos y pagos en un solo lugar."
     }
   ],
   "idealFor": [
@@ -35,24 +35,24 @@
     "title": "Mi Garage",
     "rows": [
       {
-        "label": "Hatchback gris",
-        "value": "En pintura",
+        "label": "En Mi Garage",
+        "value": "Autos en el taller",
         "tone": "info"
       },
       {
-        "label": "Sedán blanco",
-        "value": "Pendiente de piezas",
+        "label": "Retrasados",
+        "value": "Por revisar",
         "tone": "warn"
       },
       {
-        "label": "Camioneta negra",
-        "value": "Lista para entregar",
-        "tone": "ok"
+        "label": "Sin check-in",
+        "value": "Falta la inspección",
+        "tone": "idle"
       },
       {
-        "label": "Compacto rojo",
-        "value": "Recepción",
-        "tone": "idle"
+        "label": "Entregados",
+        "value": "Historial",
+        "tone": "ok"
       }
     ],
     "badge": "Ejemplo"
@@ -60,7 +60,11 @@
   "faqs": [
     {
       "q": "¿Qué muestra Mi Garage?",
-      "a": "Cada auto que tiene el taller y la etapa en la que va."
+      "a": "Los autos que están en el taller y los que ya se entregaron, con cuántos van retrasados, cuántos son retrabajos o garantías y cuántos no tienen check-in."
+    },
+    {
+      "q": "¿Qué es un auto sin check-in?",
+      "a": "Es un auto que está en el taller pero no tiene la inspección de entrada. Desde su fila puedes agregar el check-in."
     },
     {
       "q": "¿Sirve con varias sucursales?",

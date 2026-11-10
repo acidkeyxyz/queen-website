@@ -3,15 +3,15 @@
   "slug": "presupuestos",
   "icon": "quote",
   "cardTitle": "Presupuestos",
-  "cardTagline": "Cotiza con tu catálogo y envía por WhatsApp",
+  "cardTagline": "Cotiza con tu catálogo o por voz en Telegram",
   "title": "Presupuestos desde tu catálogo, listos para enviar",
-  "lede": "Arma el presupuesto con tu catálogo de productos y servicios y envíalo al cliente por WhatsApp, sin volver a capturar nada.",
-  "seoTitle": "Presupuestos para talleres con catálogo y WhatsApp | YuriApp",
-  "seoDescription": "Crea presupuestos de hojalatería, pintura y llantas desde tu catálogo de productos y servicios y envíalos al cliente por WhatsApp.",
+  "lede": "Arma el presupuesto con tu catálogo de productos y servicios, o dicta una nota de voz en Telegram: el bot te devuelve el presupuesto como imagen y, al confirmarlo, aparece en Presupuestos.",
+  "seoTitle": "Presupuestos para talleres con catálogo y Telegram | YuriApp",
+  "seoDescription": "Crea presupuestos de hojalatería, pintura y llantas desde tu catálogo o con una nota de voz en Telegram, y consérvalos en Presupuestos.",
   "keywords": [
     "presupuesto taller hojalatería",
     "cotizador taller de pintura",
-    "presupuesto por WhatsApp"
+    "presupuesto por Telegram"
   ],
   "highlights": [
     {
@@ -19,8 +19,8 @@
       "text": "Cada partida sale de tu catálogo, con su precio, para no teclear lo mismo en cada presupuesto."
     },
     {
-      "title": "Envío por WhatsApp",
-      "text": "El cliente recibe el presupuesto en el canal que ya usa, y tú ves lo que se le mandó."
+      "title": "Presupuesto por Telegram",
+      "text": "Dicta una nota de voz o escribe /presupuesto en el bot de Telegram. Recibes el presupuesto como imagen y, al confirmarlo, queda en Presupuestos con su transcripción."
     },
     {
       "title": "Parte del mismo expediente",
@@ -51,8 +51,8 @@
         "tone": "info"
       },
       {
-        "label": "Estado",
-        "value": "Enviado por WhatsApp",
+        "label": "Origen",
+        "value": "Nota de voz en Telegram",
         "tone": "ok"
       }
     ],
@@ -64,8 +64,8 @@
       "a": "De tu catálogo de productos y servicios. Lo cargas una vez y lo reutilizas en cada presupuesto."
     },
     {
-      "q": "¿Cómo recibe el cliente el presupuesto?",
-      "a": "Por WhatsApp. El sistema lo envía desde el propio presupuesto, sin copiar y pegar."
+      "q": "¿Puedo crear un presupuesto con la voz?",
+      "a": "Sí. Dicta una nota de voz en el bot de Telegram (o escribe /presupuesto) y recibes el presupuesto como imagen. Al confirmarlo queda en Presupuestos, con la transcripción o el texto enviado."
     },
     {
       "q": "¿Puedo manejar precios distintos por tipo de cliente?",

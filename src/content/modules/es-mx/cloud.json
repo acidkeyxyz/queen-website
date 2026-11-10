@@ -1,0 +1,69 @@
+{
+  "order": 16,
+  "stage": false,
+  "slug": "archivos-en-la-nube",
+  "icon": "cloud",
+  "cardTitle": "Archivos en la nube",
+  "cardTagline": "Guarda imágenes y documentos del taller",
+  "title": "Guarda las imágenes y los documentos del taller en la nube",
+  "lede": "Sube imágenes y documentos, consulta la lista de archivos y descárgalos cuando los necesites.",
+  "seoTitle": "Archivos en la nube para tu taller | YuriApp",
+  "seoDescription": "Guarda imágenes y documentos de tu taller en la nube de YuriApp, consulta la lista de archivos y descárgalos cuando los necesites.",
+  "keywords": [
+    "archivos en la nube",
+    "guardar fotos del taller",
+    "documentos del taller"
+  ],
+  "highlights": [
+    {
+      "title": "Sube tus archivos",
+      "text": "Sube imágenes y documentos del taller desde la misma pantalla."
+    },
+    {
+      "title": "Lista de archivos",
+      "text": "Ves cada archivo con su ruta y su última modificación, y puedes descargarlo."
+    },
+    {
+      "title": "Analiza un presupuesto",
+      "text": "Si subes un presupuesto, YuriApp lo analiza, tú revisas los datos y lo confirmas y guardas."
+    }
+  ],
+  "idealFor": [
+    "Talleres que guardan fotos y documentos en el celular de alguien"
+  ],
+  "sample": {
+    "title": "Queen Cloud",
+    "rows": [
+      {
+        "label": "Archivo",
+        "value": "Imagen o documento",
+        "tone": "idle"
+      },
+      {
+        "label": "Ruta",
+        "value": "Dónde está guardado",
+        "tone": "info"
+      },
+      {
+        "label": "Última modificación",
+        "value": "Fecha",
+        "tone": "ok"
+      }
+    ],
+    "badge": "Ejemplo"
+  },
+  "faqs": [
+    {
+      "q": "¿Qué puedo guardar?",
+      "a": "Imágenes y documentos del taller."
+    },
+    {
+      "q": "¿Puedo volver a descargarlos?",
+      "a": "Sí. Cada archivo de la lista tiene su opción para descargarlo."
+    },
+    {
+      "q": "¿Qué pasa si un enlace ya no abre?",
+      "a": "Usas Actualizar links y los enlaces se renuevan."
+    }
+  ]
+}
