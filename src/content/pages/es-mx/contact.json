@@ -21,11 +21,19 @@
         },
         {
           "q": "¿Cuánto cuestan los planes?",
-          "a": "Taller cuesta $890 MXN al mes, con hasta 3 usuarios y 1 sucursal. Pro cuesta $1,590 MXN al mes, con hasta 10 usuarios y 2 sucursales. Cadena se acuerda contigo."
+          "a": "Taller cuesta $890 MXN al mes, con hasta 3 usuarios y 1 sucursal. Pro cuesta $1,590 MXN al mes, con hasta 10 usuarios y 2 sucursales. Los planes se pagan por año, por adelantado: $10,680 MXN el plan Taller y $19,080 MXN el plan Pro. Cadena se acuerda contigo."
+        },
+        {
+          "q": "¿Qué es la cuota de incorporación?",
+          "a": "Es un cargo de $890 MXN cada año, además del plan. No es reembolsable."
+        },
+        {
+          "q": "¿Puedo pagar a meses sin intereses?",
+          "a": "Sí. Con tarjeta de crédito puedes pagar a 3, 6 o 12 meses sin intereses."
         },
         {
           "q": "¿Se cobra por usuario?",
-          "a": "No. Cada plan tiene un precio mensual fijo, con su límite de usuarios y sucursales."
+          "a": "No. Cada plan tiene un precio fijo, con su límite de usuarios y sucursales."
         },
         {
           "q": "¿El reloj checador cuesta extra?",

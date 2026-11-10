@@ -4,13 +4,13 @@
   "order": 2,
   "title": "Precios",
   "seoTitle": "Precios de YuriApp: planes Taller, Pro y Cadena",
-  "seoDescription": "Planes de YuriApp: Taller de $890 MXN al mes, Pro de $1,590 MXN al mes y Cadena a convenir. El reloj checador va incluido en todos los planes.",
+  "seoDescription": "Planes de YuriApp: Taller de $890 MXN al mes y Pro de $1,590 MXN al mes, pago anual y meses sin intereses. Cadena a convenir. Reloj checador incluido.",
   "blocks": [
     {
       "type": "pricing",
       "title": "Planes y precios",
-      "lede": "Elige el plan según el tamaño de tu taller. El precio es fijo por plan, no por usuario.",
-      "footnote": "Precios en MXN por mes. Cada plan tiene un precio fijo con su límite de usuarios y sucursales.",
+      "lede": "Elige el plan según el tamaño de tu taller. El precio mensual es fijo por plan, no por usuario, y se paga por año.",
+      "footnote": "Precios en MXN. Los planes Taller y Pro se pagan por año, por adelantado, y con tarjeta de crédito puedes pagar a 3, 6 o 12 meses sin intereses. Cada año se cobra además una cuota de incorporación de $890 MXN, no reembolsable.",
       "plans": [
         {
           "key": "TALLER",
@@ -23,7 +23,8 @@
           "features": [
             "Presupuestos",
             "Órdenes de trabajo",
-            "Reloj checador incluido"
+            "Reloj checador incluido",
+            "Pago anual: $10,680 MXN"
           ],
           "cta": {
             "label": "Crear cuenta",
@@ -41,7 +42,8 @@
           "features": [
             "Todo lo del plan Taller",
             "Métricas",
-            "Bot de Telegram"
+            "Bot de Telegram",
+            "Pago anual: $19,080 MXN"
           ],
           "cta": {
             "label": "Crear cuenta",
@@ -73,11 +75,19 @@
       "items": [
         {
           "q": "¿Cuánto cuestan los planes?",
-          "a": "Taller cuesta $890 MXN al mes, con hasta 3 usuarios y 1 sucursal. Pro cuesta $1,590 MXN al mes, con hasta 10 usuarios y 2 sucursales. Cadena se acuerda contigo."
+          "a": "Taller cuesta $890 MXN al mes, con hasta 3 usuarios y 1 sucursal. Pro cuesta $1,590 MXN al mes, con hasta 10 usuarios y 2 sucursales. Los planes se pagan por año, por adelantado: $10,680 MXN el plan Taller y $19,080 MXN el plan Pro. Cadena se acuerda contigo."
+        },
+        {
+          "q": "¿Qué es la cuota de incorporación?",
+          "a": "Es un cargo de $890 MXN cada año, además del plan. No es reembolsable."
+        },
+        {
+          "q": "¿Puedo pagar a meses sin intereses?",
+          "a": "Sí. Con tarjeta de crédito puedes pagar a 3, 6 o 12 meses sin intereses."
         },
         {
           "q": "¿Se cobra por usuario?",
-          "a": "No. Cada plan tiene un precio mensual fijo, con su límite de usuarios y sucursales."
+          "a": "No. Cada plan tiene un precio fijo, con su límite de usuarios y sucursales."
         },
         {
           "q": "¿El reloj checador cuesta extra?",
